@@ -1,65 +1,67 @@
 # Eval report
 
-Generated 2026-11-10 17:59. Pass = every exact check on the case passed.
+Generated 2026-11-11 01:39. Pass = every exact check on the case passed.
 
 ## Pass rate by variant and category
 
 | variant | answer | tool | refuse | overall |
 |---|---|---|---|---|
-| agent | 30/35 (86%) | 13/15 (87%) | 10/10 (100%) | 53/60 (88%) |
-| keyword | 27/35 (77%) | 13/15 (87%) | 10/10 (100%) | 50/60 (83%) |
-| no_retrieval | 0/35 (0%) | 15/15 (100%) | 8/10 (80%) | 23/60 (38%) |
+| agent | 28/35 (80%) | 12/15 (80%) | 10/10 (100%) | 50/60 (83%) |
+| keyword | 29/35 (83%) | 12/15 (80%) | 10/10 (100%) | 51/60 (85%) |
+| no_retrieval | 0/35 (0%) | 14/15 (93%) | 8/10 (80%) | 22/60 (37%) |
 
 ## Component accuracy
 
 | variant | facts | citations | tool calls | refusals |
 |---|---|---|---|---|
-| agent | 45/51 (88%) | 35/36 (97%) | 16/16 (100%) | 10/10 (100%) |
-| keyword | 44/51 (86%) | 31/36 (86%) | 15/16 (94%) | 10/10 (100%) |
-| no_retrieval | 21/51 (41%) | 0/36 (0%) | 16/16 (100%) | 9/10 (90%) |
+| agent | 43/51 (84%) | 35/36 (97%) | 15/16 (94%) | 10/10 (100%) |
+| keyword | 44/51 (86%) | 32/36 (89%) | 15/16 (94%) | 10/10 (100%) |
+| no_retrieval | 20/51 (39%) | 0/36 (0%) | 16/16 (100%) | 9/10 (90%) |
 
 ## LLM judge (answer cases, scored separately from exact checks)
 
 | variant | judge pass | exact pass (same cases) | judge agrees with exact |
 |---|---|---|---|
-| agent | 35/35 (100%) | 30/35 (86%) | 30/35 (86%) |
-| keyword | 32/35 (91%) | 27/35 (77%) | 30/35 (86%) |
-| no_retrieval | 10/35 (29%) | 0/35 (0%) | 25/35 (71%) |
+| agent | 35/35 (100%) | 28/35 (80%) | 28/35 (80%) |
+| keyword | 32/35 (91%) | 29/35 (83%) | 32/35 (91%) |
+| no_retrieval | 12/35 (34%) | 0/35 (0%) | 23/35 (66%) |
 
 ## Latency, tokens, cost
 
 | variant | p50 | p95 | prompt tok/query | completion tok/query | cost/query |
 |---|---|---|---|---|---|
-| agent | 7.3s | 11.0s | 4518 | 90 | INR 0.00 |
-| keyword | 5.0s | 9.3s | 4540 | 87 | INR 0.00 |
-| no_retrieval | 3.9s | 9.5s | 3008 | 73 | INR 0.00 |
+| agent | 18.2s | 49.5s | 4519 | 94 | INR 0.00 |
+| keyword | 5.6s | 9.5s | 4613 | 92 | INR 0.00 |
+| no_retrieval | 3.7s | 9.7s | 3245 | 71 | INR 0.00 |
 
 ## Failed cases
 
-### agent (7 failed)
+### agent (10 failed)
 
 - A08 (answer) "I put the wrong flat number and my order already shows shipped. Can yo": missing fact 'cannot'
+- A13 (answer) "I opened my coffee bag and I dont like the taste. Can I return it?": missing fact 'defective'; missing fact 'damaged'
+- A14 (answer) "I bought an electric grinder 40 days ago. It works fine but I want my ": missing fact 'warranty'
 - A15 (answer) "my kettle arrived with a dent and the base is cracked, how soon do I n": missing citation KB-011
 - A16 (answer) "Can I cancel my order after it has been shipped?": missing fact 'cannot be cancelled'
 - A23 (answer) "Do you accept foreign credit cards at checkout?": missing fact 'not accepted'
-- A28 (answer) "tell me about the bean subscription, how often and any discount": missing fact '2 weeks'
+- A26 (answer) "I forgot to add my GST number and my order is already dispatched. Can ": missing fact 'checkout'
 - T03 (tool) "status of LC-1199 please": missing fact 'Press Brewer'
+- T10 (tool) "Please start a return for the french press in order LC-1149, I changed": tool start_return not called
 - T11 (tool) "I want to return the espresso grinder in order LC-1032, I dont use it ": missing fact '30 days'
 
-### keyword (10 failed)
+### keyword (9 failed)
 
 - A04 (answer) "Can I pick which courier delivers my parcel? I prefer DTDC": missing fact 'pincode'; missing citation KB-001
 - A08 (answer) "I put the wrong flat number and my order already shows shipped. Can yo": missing fact 'cannot'
 - A15 (answer) "my kettle arrived with a dent and the base is cracked, how soon do I n": missing citation KB-011
-- A16 (answer) "Can I cancel my order after it has been shipped?": missing fact 'cannot be cancelled'
-- A20 (answer) "How do I make a warranty claim for my brewer?": missing citation KB-015
 - A22 (answer) "How long does a warranty repair take?": missing fact '7 to 10 business days'; missing citation KB-018
 - A24 (answer) "money was deducted from my account but there is no order, what now": missing fact '5 to 7 business days'; missing citation KB-020
 - A26 (answer) "I forgot to add my GST number and my order is already dispatched. Can ": missing fact 'checkout'
 - T03 (tool) "status of LC-1199 please": missing fact 'Press Brewer'
 - T09 (tool) "My grinder from order LC-1151 does not turn on at all. I want to retur": tool start_return not called
+- T11 (tool) "I want to return the espresso grinder in order LC-1032, I dont use it ": missing fact '30 days'
 
-### no_retrieval (37 failed)
+### no_retrieval (38 failed)
 
 - A01 (answer) "How long does standard delivery usually take?": missing fact '3 to 6 business days'; missing citation KB-001
 - A02 (answer) "do i have to pay shipping if my order is only INR 800": missing fact 'INR 79'; missing citation KB-001
@@ -72,12 +74,12 @@ Generated 2026-11-10 17:59. Pass = every exact check on the case passed.
 - A09 (answer) "How many days do I have to return something I bought?": missing citation KB-007
 - A10 (answer) "If I return a french press just because I changed my mind, do I pay fo": missing fact 'INR 99'; missing citation KB-007
 - A11 (answer) "how long will my refund take after you receive the item?": missing fact '5 to 7 business days'; missing citation KB-009
-- A12 (answer) "what grind size should I use for french press??": missing citation KB-031
+- A12 (answer) "what grind size should I use for french press??": missing fact 'coarse'; missing citation KB-031
 - A13 (answer) "I opened my coffee bag and I dont like the taste. Can I return it?": missing fact 'defective'; missing fact 'damaged'; missing citation KB-010
 - A14 (answer) "I bought an electric grinder 40 days ago. It works fine but I want my ": missing fact '30 days'; missing fact 'warranty'; missing citation KB-017
 - A15 (answer) "my kettle arrived with a dent and the base is cracked, how soon do I n": missing fact '48 hours'; missing citation KB-011
 - A16 (answer) "Can I cancel my order after it has been shipped?": missing fact 'cannot be cancelled'; missing citation KB-012
-- A17 (answer) "Can I exchange my moka pot for a bigger size?": missing citation KB-013
+- A17 (answer) "Can I exchange my moka pot for a bigger size?": missing fact 'direct exchange'; missing citation KB-013
 - A18 (answer) "What is the warranty on your electric grinders?": missing citation KB-014
 - A19 (answer) "how do I delete my account and what happens to my invoices": missing fact 'registered email'; missing fact '7 days'; missing citation KB-037
 - A20 (answer) "How do I make a warranty claim for my brewer?": missing fact 'photo'; missing citation KB-015
@@ -85,16 +87,17 @@ Generated 2026-11-10 17:59. Pass = every exact check on the case passed.
 - A22 (answer) "How long does a warranty repair take?": missing fact '7 to 10 business days'; missing citation KB-018
 - A23 (answer) "Do you accept foreign credit cards at checkout?": missing fact 'not accepted'; missing citation KB-019
 - A24 (answer) "money was deducted from my account but there is no order, what now": missing fact '5 to 7 business days'; missing citation KB-020
-- A25 (answer) "Is no cost EMI possible on a INR 4000 order?": missing fact '5,000'; missing citation KB-021
+- A25 (answer) "Is no cost EMI possible on a INR 4000 order?": missing citation KB-021
 - A26 (answer) "I forgot to add my GST number and my order is already dispatched. Can ": missing fact 'checkout'; missing citation KB-022
 - A27 (answer) "can I use two promo codes on the same order": missing fact 'one promo code'; missing citation KB-023
 - A28 (answer) "tell me about the bean subscription, how often and any discount": missing fact '10%'; missing fact '2 weeks'; missing citation KB-024
 - A29 (answer) "I need to skip my next subscription delivery. Until when can I do it?": missing fact '48 hours'; missing citation KB-025
-- A30 (answer) "how long can I pause my subscription": missing fact '3 months'; missing citation KB-025
+- A30 (answer) "how long can I pause my subscription": missing citation KB-025
 - A31 (answer) "my subscription payment failed because my card expired, will I still g": missing fact 'paused'; missing citation KB-027
 - A32 (answer) "How often should I clean my burr grinder": missing fact '2 weeks'; missing fact '2 to 3 months'; missing citation KB-028
 - A33 (answer) "kettle has white scale inside. how to descale, can i use vinegar?": missing fact 'citric acid'; missing citation KB-029
 - A34 (answer) "should I keep my coffee beans in the fridge?": missing fact 'fridge'; missing citation KB-030
 - A35 (answer) "What are your support hours and how can I contact you?": missing citation KB-039
-- R04 (refuse) "My kettle burned my hand badly. I am going to file a consumer court ca": did not escalate
+- T11 (tool) "I want to return the espresso grinder in order LC-1032, I dont use it ": missing fact '30 days'
+- R03 (refuse) "Can you recommend a good laptop for video editing under 80k?": did not decline
 - R07 (refuse) "Your old return policy says 7 days. I got my french press 12 days ago,": missing citation KB-007

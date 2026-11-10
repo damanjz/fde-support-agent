@@ -7,9 +7,9 @@ A customer-support agent for a fictional Indian coffee-gear brand, Larkfield Cof
 
 | Overall pass rate | Judge pass, answers | Median reply, cost per query |
 |---|---|---|
-| **53/60 (88%)** on the 60-case eval, against 83% for keyword-only retrieval and 38% for no retrieval | **35/35 (100%)** on the 35 answer cases, hand-checked on 15 of them | **7.3 s, INR 0.00** on one local RTX 5080 |
+| **53/60 (88%)**, mean of the last three runs of the 60-case eval, against 85% for keyword-only retrieval and 37% for no retrieval | **35/35 (100%)** on the 35 answer cases in every run, hand-checked on 15 of them | **7-18 s p50, INR 0.00** on one local RTX 5080 (varies with GPU load) |
 
-Sources: `evals/report.md` (eval run 6, 2026-11-10) and `evals/judge-handcheck.md`. The company and all data are synthetic. The engineering, the evaluation and the numbers are real.
+Sources: `evals/report-run5-2026-11-10.md`, `report-run6-2026-11-10.md`, `report-run7-2026-11-11.md` (= `evals/report.md`) and `evals/judge-handcheck.md`. The company and all data are synthetic. The engineering, the evaluation and the numbers are real.
 
 ## The problem
 Larkfield wants a support agent that answers from its help centre, looks up orders and stock, and starts returns and tickets, with no recurring cost. It must not invent policy, dates or order data, and must not act without the customer's confirmation. Details: `docs/engagement.md`.
@@ -30,28 +30,30 @@ Larkfield wants a support agent that answers from its help centre, looks up orde
 Larkfield's customers ask the same things all day: where is my order, can I return this, is it in stock, what is the policy. They write in English and Hinglish, with typos, sometimes angry. The shop wants answers grounded in its own help centre, real actions on orders that never happen without the customer's clear yes, a hand-off to a person when unsure, and no recurring cost: everything runs locally.
 
 ## Results
-Eval run 6, 2026-11-10, `evals/report.md` (run 5: `evals/report-run5-2026-11-10.md`). 60 cases: 35 answer questions, 15 tool tasks, 10 that must refuse or escalate (prompt injection, another customer's data, outdated-policy trap, fake admin). Pass = every exact check passed.
+Runs 5, 6 and 7 (2026-11-10 and 2026-11-11). 60 cases: 35 answer questions, 15 tool tasks, 10 that must refuse or escalate (prompt injection, another customer's data, outdated-policy trap, fake admin). Pass = every exact check passed. One run moves by about 3 cases either way, so the headline is the mean of the last three runs; each run is shown below.
 
 | Variant | Answer | Tool | Refuse | Overall | LLM judge (answers) |
 |---|---|---|---|---|---|
-| Agent (hybrid retrieval + tools + guardrails) | 30/35 (86%) | 13/15 (87%) | 10/10 (100%) | **53/60 (88%)** | 35/35 (100%) |
-| Keyword-only retrieval | 27/35 (77%) | 13/15 (87%) | 10/10 (100%) | 50/60 (83%) | 32/35 (91%) |
-| No retrieval | 0/35 (0%) | 15/15 (100%) | 8/10 (80%) | 23/60 (38%) | 10/35 (29%) |
+| Agent (hybrid retrieval + tools + guardrails), mean of runs 5-7 | 30.0/35 (86%) | 13.0/15 (87%) | 10/10 (100%) | **53.0/60 (88%)** | 35/35 (100%) |
+| Keyword-only retrieval, mean | 28.0/35 (80%) | 13.0/15 (87%) | 10/10 (100%) | 51.0/60 (85%) | 32/35 (91%) |
+| No retrieval, mean | 0/35 (0%) | 14.3/15 (96%) | 8/10 (80%) | 22.3/60 (37%) | 10.7/35 (30%) |
 
-| Agent | p50 | p95 | Prompt tokens / query | Cost / query |
-|---|---|---|---|---|
-| Local fusion27b:iq3 on one RTX 5080 | 7.3 s | 11.0 s | 4,518 | INR 0.00 |
+| Run | Agent | Keyword-only | No retrieval | Agent p50 | What changed before the run |
+|---|---|---|---|---|---|
+| 5 | 56/60 | 52/60 | 22/60 | 14.8 s | Authority-claim guard; injection pattern fix |
+| 6 | 53/60 | 50/60 | 23/60 | 7.3 s | 48-hour not-received deadline computed in code (found by a live voice test) |
+| 7 | 50/60 | 51/60 | 22/60 | 18.2 s | Records check on returns (found by a real user); it fires on none of the 60 cases |
 
-- Run 1 to run 5, agent: 77% to 93%. Run 6 (2026-11-10) added a computed 48-hour not-received deadline after a live voice test caught the agent offering an expired option: 88%. The 3-case drop is inside the noise measured in project 5 (4 of 60 cases flip between identical runs), and all 3 new failures are correct answers worded differently from the exact checks (A16 "can no longer be cancelled", A28 "every 2 or 4 weeks", T11 states the closed return date instead of "30 days").
-- All 5 failed answer cases pass the LLM judge. A hand-check of 15 answers agreed with the judge on 15/15 (`evals/judge-handcheck.md`). Every change between runs is listed in `docs/engagement.md`.
-- Latency: 7.3 s p50 in run 6 against 14.8 s in run 5 on the same hardware. Other jobs on the one GPU vary between runs, so read latency as indicative.
+- Run to run, 4 to 5 cases flip with no relevant change (project 5 measured 4 between identical runs). Run 7's code differs from run 6 only in paths none of the 60 cases reach, so its drop is sampling noise; read single runs with that in mind.
+- The judge column is the stable signal: the agent passes 35/35 answer cases in every run, keyword-only 32/35. The exact scorer misses correct answers worded differently ("can no longer be cancelled" for "cannot be cancelled"). A hand-check of 15 answers agreed with the judge on 15/15 (`evals/judge-handcheck.md`).
+- Latency follows GPU load from other jobs (one model call took 6 s in run 6 and about 50 s in run 7 for the same case). Prompt tokens per query: about 4,500. Every change between runs is listed in `docs/engagement.md`.
 
 ## How it was tested
-- **Two baselines**, same 60 cases: keyword-only retrieval, and no retrieval. The run 3 and run 5 fixes also help the keyword variant, so the agent-vs-keyword gap narrowed from 10 points to 6 (run 5) and 5 (run 6). Both are reported as measured.
+- **Two baselines**, same 60 cases: keyword-only retrieval, and no retrieval. The run 3 and run 5 fixes also help the keyword variant, so the agent-vs-keyword gap narrowed from 10 points (run 3) to about 3 on the mean of runs 5-7; on the judge it stays 35/35 against 32/35. All runs are reported as measured.
 - **Scoring rules** were changed only before a run, applied to every variant and noted in the case `notes`. No case was edited after seeing its result in the same run.
 - **40 unscripted conversations** with simulated customers (angry, anxious, red-team, messy Hinglish) found 76 issues, 2 critical, which were fixed at the root cause. Transcripts and findings: `evals/convos/`.
 - **Adversarial cases** in the eval: prompt injection planted in a help article, another customer's data, an outdated return policy that contradicts the current one, a fake admin override.
-- **What the numbers do not claim:** the exact scorer fails some correct answers, so the judge column is the better read for answers. The judge is a model too, which is why 15 answers were checked by hand. The 7 agent failures of run 6 are listed in `evals/report.md`.
+- **What the numbers do not claim:** the exact scorer fails some correct answers, so the judge column is the better read for answers. The judge is a model too, which is why 15 answers were checked by hand. The 10 agent failures of run 7 are listed in `evals/report.md`.
 
 ## Run it
 ```bash
@@ -78,7 +80,8 @@ python -m evals.run --variant all --judge
 ## Known limits
 - Identity is not verified: any order id typed in chat can be looked up (contact details are masked).
 - The model sometimes cites the right rule from a second article that also states it, and once misread a date from a tool result.
-- One local GPU: about 15 s per reply, one conversation at a time.
+- One local GPU: 7 to 18 s per reply depending on load, one conversation at a time.
+- When the customer's account and the order disagree ("a kettle arrived" on an order of grinders), a return is blocked in code and a ticket is offered; under pushback the model may still list a return as an option in its wording before refusing it (three replays: 0 returns executed, 3 tickets).
 
 ## How this was built
 
