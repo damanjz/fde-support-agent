@@ -1,0 +1,4752 @@
+[
+  {
+    "order_id": "LC-1001",
+    "customer_name": "Riya Patel",
+    "email": "riya.patel41@example.com",
+    "phone": "+91 9244106460",
+    "items": [
+      {
+        "sku": "BR-009",
+        "qty": 1,
+        "price_inr": 1399
+      }
+    ],
+    "total_inr": 1399,
+    "status": "delivered",
+    "ordered_at": "2026-06-04T21:55:29+05:30",
+    "shipped_at": "2026-06-05T15:55:29+05:30",
+    "delivered_at": "2026-06-08T16:55:29+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT05218549"
+  },
+  {
+    "order_id": "LC-1002",
+    "customer_name": "Vivaan Nair",
+    "email": "vivaan.nair55@example.com",
+    "phone": "+91 9158464506",
+    "items": [
+      {
+        "sku": "GR-002",
+        "qty": 1,
+        "price_inr": 3999
+      }
+    ],
+    "total_inr": 3999,
+    "status": "delivered",
+    "ordered_at": "2026-06-24T20:30:38+05:30",
+    "shipped_at": "2026-06-25T04:30:38+05:30",
+    "delivered_at": "2026-06-27T12:30:38+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT55799065"
+  },
+  {
+    "order_id": "LC-1003",
+    "customer_name": "Pooja Sharma",
+    "email": "pooja.sharma17@example.com",
+    "phone": "+91 9859406925",
+    "items": [
+      {
+        "sku": "AC-007",
+        "qty": 1,
+        "price_inr": 1299
+      },
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      }
+    ],
+    "total_inr": 8798,
+    "status": "delivered",
+    "ordered_at": "2026-06-24T22:18:19+05:30",
+    "shipped_at": "2026-06-25T12:18:19+05:30",
+    "delivered_at": "2026-06-30T17:18:19+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT08538012"
+  },
+  {
+    "order_id": "LC-1004",
+    "customer_name": "Kavya Menon",
+    "email": "kavya.menon70@example.com",
+    "phone": "+91 9764529128",
+    "items": [
+      {
+        "sku": "BR-008",
+        "qty": 2,
+        "price_inr": 6999
+      },
+      {
+        "sku": "AC-012",
+        "qty": 1,
+        "price_inr": 699
+      }
+    ],
+    "total_inr": 14697,
+    "status": "cancelled",
+    "ordered_at": "2026-07-01T16:35:35+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1005",
+    "customer_name": "Vivaan Das",
+    "email": "vivaan.das59@example.com",
+    "phone": "+91 9787943262",
+    "items": [
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      },
+      {
+        "sku": "AC-003",
+        "qty": 1,
+        "price_inr": 349
+      }
+    ],
+    "total_inr": 7848,
+    "status": "delivered",
+    "ordered_at": "2026-07-02T00:58:26+05:30",
+    "shipped_at": "2026-07-03T02:58:26+05:30",
+    "delivered_at": "2026-07-05T05:58:26+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0382653845"
+  },
+  {
+    "order_id": "LC-1006",
+    "customer_name": "Neha Sharma",
+    "email": "neha.sharma49@example.com",
+    "phone": "+91 9882811265",
+    "items": [
+      {
+        "sku": "BN-011",
+        "qty": 2,
+        "price_inr": 849
+      },
+      {
+        "sku": "AC-007",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 2997,
+    "status": "delivered",
+    "ordered_at": "2026-07-02T06:21:42+05:30",
+    "shipped_at": "2026-07-03T07:21:42+05:30",
+    "delivered_at": "2026-07-06T08:21:42+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL5842108394"
+  },
+  {
+    "order_id": "LC-1007",
+    "customer_name": "Riya Kulkarni",
+    "email": "riya.kulkarni23@example.com",
+    "phone": "+91 9582201805",
+    "items": [
+      {
+        "sku": "GR-003",
+        "qty": 1,
+        "price_inr": 5499
+      },
+      {
+        "sku": "AC-010",
+        "qty": 1,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 6698,
+    "status": "delivered",
+    "ordered_at": "2026-07-05T22:41:17+05:30",
+    "shipped_at": "2026-07-06T12:41:17+05:30",
+    "delivered_at": "2026-07-10T20:41:17+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL5263097658"
+  },
+  {
+    "order_id": "LC-1008",
+    "customer_name": "Aditya Joshi",
+    "email": "aditya.joshi16@example.com",
+    "phone": "+91 9883579511",
+    "items": [
+      {
+        "sku": "BR-006",
+        "qty": 1,
+        "price_inr": 1199
+      },
+      {
+        "sku": "BN-012",
+        "qty": 3,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 6596,
+    "status": "delivered",
+    "ordered_at": "2026-07-11T03:56:28+05:30",
+    "shipped_at": "2026-07-12T03:56:28+05:30",
+    "delivered_at": "2026-07-15T05:56:28+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD571164941"
+  },
+  {
+    "order_id": "LC-1009",
+    "customer_name": "Imran Iyer",
+    "email": "imran.iyer89@example.com",
+    "phone": "+91 9556963279",
+    "items": [
+      {
+        "sku": "AC-012",
+        "qty": 1,
+        "price_inr": 699
+      },
+      {
+        "sku": "KT-002",
+        "qty": 1,
+        "price_inr": 4499
+      }
+    ],
+    "total_inr": 5198,
+    "status": "delivered",
+    "ordered_at": "2026-07-12T13:55:15+05:30",
+    "shipped_at": "2026-07-12T23:55:15+05:30",
+    "delivered_at": "2026-07-17T05:55:15+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT85576523"
+  },
+  {
+    "order_id": "LC-1010",
+    "customer_name": "Lakshmi Patel",
+    "email": "lakshmi.patel52@example.com",
+    "phone": "+91 9085651788",
+    "items": [
+      {
+        "sku": "BR-010",
+        "qty": 1,
+        "price_inr": 24999
+      },
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      }
+    ],
+    "total_inr": 32498,
+    "status": "delivered",
+    "ordered_at": "2026-07-13T12:16:46+05:30",
+    "shipped_at": "2026-07-14T01:16:46+05:30",
+    "delivered_at": "2026-07-19T05:16:46+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD843528144"
+  },
+  {
+    "order_id": "LC-1011",
+    "customer_name": "Siddharth Pillai",
+    "email": "siddharth.pillai97@example.com",
+    "phone": "+91 9314503784",
+    "items": [
+      {
+        "sku": "AC-004",
+        "qty": 1,
+        "price_inr": 249
+      },
+      {
+        "sku": "KT-004",
+        "qty": 2,
+        "price_inr": 7499
+      }
+    ],
+    "total_inr": 15247,
+    "status": "cancelled",
+    "ordered_at": "2026-07-17T23:48:04+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1012",
+    "customer_name": "Tanvi Joshi",
+    "email": "tanvi.joshi88@example.com",
+    "phone": "+91 9982104602",
+    "items": [
+      {
+        "sku": "BN-013",
+        "qty": 3,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 2697,
+    "status": "delivered",
+    "ordered_at": "2026-07-19T15:47:08+05:30",
+    "shipped_at": "2026-07-20T02:47:08+05:30",
+    "delivered_at": "2026-07-26T02:47:08+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD253739241"
+  },
+  {
+    "order_id": "LC-1013",
+    "customer_name": "Riya Das",
+    "email": "riya.das47@example.com",
+    "phone": "+91 9473548643",
+    "items": [
+      {
+        "sku": "BN-008",
+        "qty": 3,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 2697,
+    "status": "cancelled",
+    "ordered_at": "2026-07-22T10:09:35+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1014",
+    "customer_name": "Sneha Reddy",
+    "email": "sneha.reddy23@example.com",
+    "phone": "+91 9488619307",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 1,
+        "price_inr": 6499
+      },
+      {
+        "sku": "AC-009",
+        "qty": 2,
+        "price_inr": 999
+      }
+    ],
+    "total_inr": 8497,
+    "status": "delivered",
+    "ordered_at": "2026-07-23T16:36:32+05:30",
+    "shipped_at": "2026-07-24T16:36:32+05:30",
+    "delivered_at": "2026-07-27T00:36:32+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT95755521"
+  },
+  {
+    "order_id": "LC-1015",
+    "customer_name": "Rahul Mehta",
+    "email": "rahul.mehta20@example.com",
+    "phone": "+91 9229004422",
+    "items": [
+      {
+        "sku": "BN-010",
+        "qty": 1,
+        "price_inr": 749
+      },
+      {
+        "sku": "BN-011",
+        "qty": 3,
+        "price_inr": 849
+      }
+    ],
+    "total_inr": 3296,
+    "status": "delivered",
+    "ordered_at": "2026-07-24T01:52:39+05:30",
+    "shipped_at": "2026-07-24T12:52:39+05:30",
+    "delivered_at": "2026-07-28T19:52:39+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD855689832"
+  },
+  {
+    "order_id": "LC-1016",
+    "customer_name": "Nikhil Bose",
+    "email": "nikhil.bose12@example.com",
+    "phone": "+91 9762528070",
+    "items": [
+      {
+        "sku": "BR-001",
+        "qty": 1,
+        "price_inr": 1299
+      },
+      {
+        "sku": "BN-007",
+        "qty": 1,
+        "price_inr": 519
+      }
+    ],
+    "total_inr": 1818,
+    "status": "delivered",
+    "ordered_at": "2026-07-27T09:19:26+05:30",
+    "shipped_at": "2026-07-28T12:19:26+05:30",
+    "delivered_at": "2026-07-30T14:19:26+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT26978043"
+  },
+  {
+    "order_id": "LC-1017",
+    "customer_name": "Vivaan Nair",
+    "email": "vivaan.nair48@example.com",
+    "phone": "+91 9286675347",
+    "items": [
+      {
+        "sku": "BN-015",
+        "qty": 3,
+        "price_inr": 539
+      },
+      {
+        "sku": "AC-008",
+        "qty": 1,
+        "price_inr": 799
+      }
+    ],
+    "total_inr": 2416,
+    "status": "delivered",
+    "ordered_at": "2026-07-27T19:59:28+05:30",
+    "shipped_at": "2026-07-28T10:59:28+05:30",
+    "delivered_at": "2026-07-30T12:59:28+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT31663233"
+  },
+  {
+    "order_id": "LC-1018",
+    "customer_name": "Deepak Bose",
+    "email": "deepak.bose19@example.com",
+    "phone": "+91 9445607874",
+    "items": [
+      {
+        "sku": "BN-008",
+        "qty": 3,
+        "price_inr": 899
+      },
+      {
+        "sku": "GR-006",
+        "qty": 1,
+        "price_inr": 12999
+      },
+      {
+        "sku": "BR-006",
+        "qty": 1,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 16895,
+    "status": "cancelled",
+    "ordered_at": "2026-07-28T21:45:29+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1019",
+    "customer_name": "Zoya Joshi",
+    "email": "zoya.joshi68@example.com",
+    "phone": "+91 9814401901",
+    "items": [
+      {
+        "sku": "BR-001",
+        "qty": 1,
+        "price_inr": 1299
+      },
+      {
+        "sku": "GR-007",
+        "qty": 1,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 3298,
+    "status": "delivered",
+    "ordered_at": "2026-07-29T19:07:16+05:30",
+    "shipped_at": "2026-07-30T11:07:16+05:30",
+    "delivered_at": "2026-08-04T17:07:16+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT90854177"
+  },
+  {
+    "order_id": "LC-1020",
+    "customer_name": "Priya Singh",
+    "email": "priya.singh78@example.com",
+    "phone": "+91 9815247357",
+    "items": [
+      {
+        "sku": "GR-007",
+        "qty": 2,
+        "price_inr": 1999
+      },
+      {
+        "sku": "BN-002",
+        "qty": 3,
+        "price_inr": 549
+      },
+      {
+        "sku": "AC-004",
+        "qty": 2,
+        "price_inr": 249
+      }
+    ],
+    "total_inr": 6143,
+    "status": "delivered",
+    "ordered_at": "2026-07-30T16:06:19+05:30",
+    "shipped_at": "2026-07-31T14:06:19+05:30",
+    "delivered_at": "2026-08-02T16:06:19+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2016128400"
+  },
+  {
+    "order_id": "LC-1021",
+    "customer_name": "Venkat Rao",
+    "email": "venkat.rao28@example.com",
+    "phone": "+91 9608724385",
+    "items": [
+      {
+        "sku": "BR-008",
+        "qty": 1,
+        "price_inr": 6999
+      },
+      {
+        "sku": "BN-010",
+        "qty": 2,
+        "price_inr": 749
+      }
+    ],
+    "total_inr": 8497,
+    "status": "returned",
+    "ordered_at": "2026-08-01T06:55:05+05:30",
+    "shipped_at": "2026-08-01T12:55:05+05:30",
+    "delivered_at": "2026-08-06T15:55:05+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT27319796"
+  },
+  {
+    "order_id": "LC-1022",
+    "customer_name": "Nikhil Pillai",
+    "email": "nikhil.pillai97@example.com",
+    "phone": "+91 9284514203",
+    "items": [
+      {
+        "sku": "GR-002",
+        "qty": 1,
+        "price_inr": 3999
+      },
+      {
+        "sku": "KT-005",
+        "qty": 1,
+        "price_inr": 2999
+      },
+      {
+        "sku": "AC-001",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 8497,
+    "status": "returned",
+    "ordered_at": "2026-08-02T03:25:13+05:30",
+    "shipped_at": "2026-08-03T09:25:13+05:30",
+    "delivered_at": "2026-08-06T10:25:13+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT27611660"
+  },
+  {
+    "order_id": "LC-1023",
+    "customer_name": "Venkat Bose",
+    "email": "venkat.bose27@example.com",
+    "phone": "+91 9049074182",
+    "items": [
+      {
+        "sku": "BN-006",
+        "qty": 3,
+        "price_inr": 529
+      }
+    ],
+    "total_inr": 1587,
+    "status": "returned",
+    "ordered_at": "2026-08-02T10:26:35+05:30",
+    "shipped_at": "2026-08-03T12:26:35+05:30",
+    "delivered_at": "2026-08-05T17:26:35+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT78037041"
+  },
+  {
+    "order_id": "LC-1024",
+    "customer_name": "Riya Das",
+    "email": "riya.das72@example.com",
+    "phone": "+91 9385642710",
+    "items": [
+      {
+        "sku": "BN-012",
+        "qty": 1,
+        "price_inr": 1799
+      },
+      {
+        "sku": "BR-008",
+        "qty": 1,
+        "price_inr": 6999
+      },
+      {
+        "sku": "BN-009",
+        "qty": 1,
+        "price_inr": 799
+      }
+    ],
+    "total_inr": 9597,
+    "status": "delivered",
+    "ordered_at": "2026-08-04T03:52:43+05:30",
+    "shipped_at": "2026-08-05T01:52:43+05:30",
+    "delivered_at": "2026-08-10T08:52:43+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD300668179"
+  },
+  {
+    "order_id": "LC-1025",
+    "customer_name": "Diya Iyer",
+    "email": "diya.iyer90@example.com",
+    "phone": "+91 9769585190",
+    "items": [
+      {
+        "sku": "BN-014",
+        "qty": 3,
+        "price_inr": 649
+      }
+    ],
+    "total_inr": 1947,
+    "status": "delivered",
+    "ordered_at": "2026-08-04T04:37:53+05:30",
+    "shipped_at": "2026-08-05T09:37:53+05:30",
+    "delivered_at": "2026-08-08T16:37:53+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT25278120"
+  },
+  {
+    "order_id": "LC-1026",
+    "customer_name": "Harini Kulkarni",
+    "email": "harini.kulkarni65@example.com",
+    "phone": "+91 9711209842",
+    "items": [
+      {
+        "sku": "GR-008",
+        "qty": 2,
+        "price_inr": 10499
+      }
+    ],
+    "total_inr": 20998,
+    "status": "delivered",
+    "ordered_at": "2026-08-05T10:50:27+05:30",
+    "shipped_at": "2026-08-05T22:50:27+05:30",
+    "delivered_at": "2026-08-10T00:50:27+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL8005279137"
+  },
+  {
+    "order_id": "LC-1027",
+    "customer_name": "Kavya Kulkarni",
+    "email": "kavya.kulkarni36@example.com",
+    "phone": "+91 9774479674",
+    "items": [
+      {
+        "sku": "BN-006",
+        "qty": 3,
+        "price_inr": 529
+      }
+    ],
+    "total_inr": 1587,
+    "status": "delivered",
+    "ordered_at": "2026-08-09T10:27:51+05:30",
+    "shipped_at": "2026-08-10T00:27:51+05:30",
+    "delivered_at": "2026-08-13T06:27:51+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT07911357"
+  },
+  {
+    "order_id": "LC-1028",
+    "customer_name": "Nandini Chatterjee",
+    "email": "nandini.chatterjee51@example.com",
+    "phone": "+91 9398488645",
+    "items": [
+      {
+        "sku": "GR-007",
+        "qty": 1,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 1999,
+    "status": "delivered",
+    "ordered_at": "2026-08-09T14:40:42+05:30",
+    "shipped_at": "2026-08-10T01:40:42+05:30",
+    "delivered_at": "2026-08-13T05:40:42+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT63521362"
+  },
+  {
+    "order_id": "LC-1029",
+    "customer_name": "Nandini Singh",
+    "email": "nandini.singh66@example.com",
+    "phone": "+91 9584638849",
+    "items": [
+      {
+        "sku": "BR-004",
+        "qty": 1,
+        "price_inr": 1899
+      }
+    ],
+    "total_inr": 1899,
+    "status": "delivered",
+    "ordered_at": "2026-08-10T00:18:18+05:30",
+    "shipped_at": "2026-08-10T06:18:18+05:30",
+    "delivered_at": "2026-08-16T09:18:18+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2692767094"
+  },
+  {
+    "order_id": "LC-1030",
+    "customer_name": "Priya Joshi",
+    "email": "priya.joshi51@example.com",
+    "phone": "+91 9726835081",
+    "items": [
+      {
+        "sku": "AC-011",
+        "qty": 1,
+        "price_inr": 1499
+      },
+      {
+        "sku": "BN-002",
+        "qty": 1,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 2048,
+    "status": "delivered",
+    "ordered_at": "2026-08-10T17:37:44+05:30",
+    "shipped_at": "2026-08-11T11:37:44+05:30",
+    "delivered_at": "2026-08-17T17:37:44+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9538965013"
+  },
+  {
+    "order_id": "LC-1031",
+    "customer_name": "Arjun Nair",
+    "email": "arjun.nair85@example.com",
+    "phone": "+91 9276113875",
+    "items": [
+      {
+        "sku": "BN-003",
+        "qty": 1,
+        "price_inr": 579
+      }
+    ],
+    "total_inr": 579,
+    "status": "delivered",
+    "ordered_at": "2026-08-16T01:06:35+05:30",
+    "shipped_at": "2026-08-16T20:06:35+05:30",
+    "delivered_at": "2026-08-23T01:06:35+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT81635401"
+  },
+  {
+    "order_id": "LC-1032",
+    "customer_name": "Tanvi Gupta",
+    "email": "tanvi.gupta45@example.com",
+    "phone": "+91 9106261488",
+    "items": [
+      {
+        "sku": "GR-006",
+        "qty": 1,
+        "price_inr": 12999
+      }
+    ],
+    "total_inr": 12999,
+    "status": "delivered",
+    "ordered_at": "2026-08-17T07:00:58+05:30",
+    "shipped_at": "2026-08-17T19:00:58+05:30",
+    "delivered_at": "2026-08-21T02:00:58+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL1862107617"
+  },
+  {
+    "order_id": "LC-1033",
+    "customer_name": "Rahul Pillai",
+    "email": "rahul.pillai75@example.com",
+    "phone": "+91 9439828640",
+    "items": [
+      {
+        "sku": "KT-005",
+        "qty": 1,
+        "price_inr": 2999
+      }
+    ],
+    "total_inr": 2999,
+    "status": "delivered",
+    "ordered_at": "2026-08-17T12:07:22+05:30",
+    "shipped_at": "2026-08-17T17:07:22+05:30",
+    "delivered_at": "2026-08-20T21:07:22+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL6135161994"
+  },
+  {
+    "order_id": "LC-1034",
+    "customer_name": "Riya Verma",
+    "email": "riya.verma1@example.com",
+    "phone": "+91 9399551566",
+    "items": [
+      {
+        "sku": "BN-011",
+        "qty": 2,
+        "price_inr": 849
+      },
+      {
+        "sku": "BN-007",
+        "qty": 2,
+        "price_inr": 519
+      }
+    ],
+    "total_inr": 2736,
+    "status": "delivered",
+    "ordered_at": "2026-08-21T23:27:05+05:30",
+    "shipped_at": "2026-08-23T03:27:05+05:30",
+    "delivered_at": "2026-08-27T06:27:05+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT97258444"
+  },
+  {
+    "order_id": "LC-1035",
+    "customer_name": "Tanvi Singh",
+    "email": "tanvi.singh3@example.com",
+    "phone": "+91 9488015646",
+    "items": [
+      {
+        "sku": "BN-002",
+        "qty": 2,
+        "price_inr": 549
+      },
+      {
+        "sku": "AC-006",
+        "qty": 2,
+        "price_inr": 599
+      },
+      {
+        "sku": "GR-007",
+        "qty": 2,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 6294,
+    "status": "cancelled",
+    "ordered_at": "2026-08-22T05:45:23+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1036",
+    "customer_name": "Varun Kulkarni",
+    "email": "varun.kulkarni17@example.com",
+    "phone": "+91 9163111196",
+    "items": [
+      {
+        "sku": "BR-006",
+        "qty": 1,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 1199,
+    "status": "returned",
+    "ordered_at": "2026-08-22T23:00:31+05:30",
+    "shipped_at": "2026-08-23T05:00:31+05:30",
+    "delivered_at": "2026-08-25T08:00:31+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD059871988"
+  },
+  {
+    "order_id": "LC-1037",
+    "customer_name": "Vivaan Patel",
+    "email": "vivaan.patel7@example.com",
+    "phone": "+91 9179677204",
+    "items": [
+      {
+        "sku": "BN-013",
+        "qty": 1,
+        "price_inr": 899
+      },
+      {
+        "sku": "AC-010",
+        "qty": 1,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 2098,
+    "status": "delivered",
+    "ordered_at": "2026-08-23T08:21:58+05:30",
+    "shipped_at": "2026-08-24T02:21:58+05:30",
+    "delivered_at": "2026-08-28T10:21:58+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT73064248"
+  },
+  {
+    "order_id": "LC-1038",
+    "customer_name": "Imran Nair",
+    "email": "imran.nair51@example.com",
+    "phone": "+91 9105914833",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 1,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 549,
+    "status": "delivered",
+    "ordered_at": "2026-08-25T23:06:51+05:30",
+    "shipped_at": "2026-08-26T12:06:51+05:30",
+    "delivered_at": "2026-08-31T20:06:51+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT23524013"
+  },
+  {
+    "order_id": "LC-1039",
+    "customer_name": "Ananya Kulkarni",
+    "email": "ananya.kulkarni47@example.com",
+    "phone": "+91 9332571929",
+    "items": [
+      {
+        "sku": "KT-002",
+        "qty": 1,
+        "price_inr": 4499
+      }
+    ],
+    "total_inr": 4499,
+    "status": "delivered",
+    "ordered_at": "2026-08-27T14:57:47+05:30",
+    "shipped_at": "2026-08-28T12:57:47+05:30",
+    "delivered_at": "2026-08-30T15:57:47+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL8522238416"
+  },
+  {
+    "order_id": "LC-1040",
+    "customer_name": "Varun Bose",
+    "email": "varun.bose87@example.com",
+    "phone": "+91 9617544201",
+    "items": [
+      {
+        "sku": "BN-013",
+        "qty": 2,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 1798,
+    "status": "delivered",
+    "ordered_at": "2026-08-27T20:18:07+05:30",
+    "shipped_at": "2026-08-28T08:18:07+05:30",
+    "delivered_at": "2026-09-01T15:18:07+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT04247613"
+  },
+  {
+    "order_id": "LC-1041",
+    "customer_name": "Varun Pillai",
+    "email": "varun.pillai46@example.com",
+    "phone": "+91 9977605538",
+    "items": [
+      {
+        "sku": "BR-005",
+        "qty": 1,
+        "price_inr": 2499
+      }
+    ],
+    "total_inr": 2499,
+    "status": "delivered",
+    "ordered_at": "2026-08-28T08:22:16+05:30",
+    "shipped_at": "2026-08-29T06:22:16+05:30",
+    "delivered_at": "2026-08-31T06:22:16+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3051478658"
+  },
+  {
+    "order_id": "LC-1042",
+    "customer_name": "Nikhil Bose",
+    "email": "nikhil.bose29@example.com",
+    "phone": "+91 9343701087",
+    "items": [
+      {
+        "sku": "KT-005",
+        "qty": 1,
+        "price_inr": 2999
+      },
+      {
+        "sku": "BN-003",
+        "qty": 3,
+        "price_inr": 579
+      },
+      {
+        "sku": "BN-012",
+        "qty": 3,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 10133,
+    "status": "delivered",
+    "ordered_at": "2026-08-28T19:14:33+05:30",
+    "shipped_at": "2026-08-30T00:14:33+05:30",
+    "delivered_at": "2026-09-01T06:14:33+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0907276151"
+  },
+  {
+    "order_id": "LC-1043",
+    "customer_name": "Diya Gupta",
+    "email": "diya.gupta74@example.com",
+    "phone": "+91 9745358134",
+    "items": [
+      {
+        "sku": "AC-004",
+        "qty": 1,
+        "price_inr": 249
+      },
+      {
+        "sku": "BR-001",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 1548,
+    "status": "delivered",
+    "ordered_at": "2026-08-29T04:25:58+05:30",
+    "shipped_at": "2026-08-29T14:25:58+05:30",
+    "delivered_at": "2026-09-02T20:25:58+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL6686316653"
+  },
+  {
+    "order_id": "LC-1044",
+    "customer_name": "Karthik Iyer",
+    "email": "karthik.iyer96@example.com",
+    "phone": "+91 9561141082",
+    "items": [
+      {
+        "sku": "BR-004",
+        "qty": 1,
+        "price_inr": 1899
+      },
+      {
+        "sku": "BR-007",
+        "qty": 1,
+        "price_inr": 1599
+      }
+    ],
+    "total_inr": 3498,
+    "status": "delivered",
+    "ordered_at": "2026-09-01T20:34:32+05:30",
+    "shipped_at": "2026-09-02T20:34:32+05:30",
+    "delivered_at": "2026-09-08T03:34:32+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0441047516"
+  },
+  {
+    "order_id": "LC-1045",
+    "customer_name": "Rahul Chatterjee",
+    "email": "rahul.chatterjee80@example.com",
+    "phone": "+91 9568080100",
+    "items": [
+      {
+        "sku": "KT-003",
+        "qty": 1,
+        "price_inr": 5999
+      },
+      {
+        "sku": "BR-007",
+        "qty": 1,
+        "price_inr": 1599
+      },
+      {
+        "sku": "BR-009",
+        "qty": 1,
+        "price_inr": 1399
+      }
+    ],
+    "total_inr": 8997,
+    "status": "delivered",
+    "ordered_at": "2026-09-03T03:52:00+05:30",
+    "shipped_at": "2026-09-03T13:52:00+05:30",
+    "delivered_at": "2026-09-09T17:52:00+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL4781824460"
+  },
+  {
+    "order_id": "LC-1046",
+    "customer_name": "Venkat Reddy",
+    "email": "venkat.reddy58@example.com",
+    "phone": "+91 9030488778",
+    "items": [
+      {
+        "sku": "AC-003",
+        "qty": 1,
+        "price_inr": 349
+      },
+      {
+        "sku": "BR-001",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 1648,
+    "status": "returned",
+    "ordered_at": "2026-09-03T07:59:30+05:30",
+    "shipped_at": "2026-09-04T03:59:30+05:30",
+    "delivered_at": "2026-09-06T03:59:30+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT17039273"
+  },
+  {
+    "order_id": "LC-1047",
+    "customer_name": "Venkat Nair",
+    "email": "venkat.nair27@example.com",
+    "phone": "+91 9004263716",
+    "items": [
+      {
+        "sku": "AC-008",
+        "qty": 1,
+        "price_inr": 799
+      },
+      {
+        "sku": "BN-003",
+        "qty": 1,
+        "price_inr": 579
+      }
+    ],
+    "total_inr": 1378,
+    "status": "returned",
+    "ordered_at": "2026-09-03T11:38:03+05:30",
+    "shipped_at": "2026-09-04T01:38:03+05:30",
+    "delivered_at": "2026-09-09T04:38:03+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL1102038300"
+  },
+  {
+    "order_id": "LC-1048",
+    "customer_name": "Neha Nair",
+    "email": "neha.nair91@example.com",
+    "phone": "+91 9923981337",
+    "items": [
+      {
+        "sku": "KT-005",
+        "qty": 1,
+        "price_inr": 2999
+      },
+      {
+        "sku": "BR-004",
+        "qty": 1,
+        "price_inr": 1899
+      }
+    ],
+    "total_inr": 4898,
+    "status": "delivered",
+    "ordered_at": "2026-09-03T17:01:09+05:30",
+    "shipped_at": "2026-09-04T00:01:09+05:30",
+    "delivered_at": "2026-09-07T06:01:09+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0812977057"
+  },
+  {
+    "order_id": "LC-1049",
+    "customer_name": "Vivaan Patel",
+    "email": "vivaan.patel70@example.com",
+    "phone": "+91 9506635167",
+    "items": [
+      {
+        "sku": "AC-006",
+        "qty": 2,
+        "price_inr": 599
+      },
+      {
+        "sku": "GR-007",
+        "qty": 1,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 3197,
+    "status": "delivered",
+    "ordered_at": "2026-09-04T12:11:18+05:30",
+    "shipped_at": "2026-09-05T04:11:18+05:30",
+    "delivered_at": "2026-09-11T05:11:18+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD999147067"
+  },
+  {
+    "order_id": "LC-1050",
+    "customer_name": "Kavya Das",
+    "email": "kavya.das53@example.com",
+    "phone": "+91 9628290920",
+    "items": [
+      {
+        "sku": "KT-003",
+        "qty": 2,
+        "price_inr": 5999
+      }
+    ],
+    "total_inr": 11998,
+    "status": "delivered",
+    "ordered_at": "2026-09-04T22:41:59+05:30",
+    "shipped_at": "2026-09-05T09:41:59+05:30",
+    "delivered_at": "2026-09-09T17:41:59+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT12417264"
+  },
+  {
+    "order_id": "LC-1051",
+    "customer_name": "Priya Patel",
+    "email": "priya.patel70@example.com",
+    "phone": "+91 9898704151",
+    "items": [
+      {
+        "sku": "BR-002",
+        "qty": 1,
+        "price_inr": 1799
+      },
+      {
+        "sku": "AC-003",
+        "qty": 1,
+        "price_inr": 349
+      }
+    ],
+    "total_inr": 2148,
+    "status": "delivered",
+    "ordered_at": "2026-09-06T04:14:49+05:30",
+    "shipped_at": "2026-09-07T08:14:49+05:30",
+    "delivered_at": "2026-09-11T10:14:49+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2837095060"
+  },
+  {
+    "order_id": "LC-1052",
+    "customer_name": "Meera Bose",
+    "email": "meera.bose66@example.com",
+    "phone": "+91 9219612138",
+    "items": [
+      {
+        "sku": "GR-007",
+        "qty": 1,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 1999,
+    "status": "returned",
+    "ordered_at": "2026-09-06T05:03:38+05:30",
+    "shipped_at": "2026-09-06T17:03:38+05:30",
+    "delivered_at": "2026-09-09T22:03:38+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD695637827"
+  },
+  {
+    "order_id": "LC-1053",
+    "customer_name": "Diya Menon",
+    "email": "diya.menon51@example.com",
+    "phone": "+91 9550135100",
+    "items": [
+      {
+        "sku": "BN-007",
+        "qty": 1,
+        "price_inr": 519
+      }
+    ],
+    "total_inr": 519,
+    "status": "delivered",
+    "ordered_at": "2026-09-06T10:33:48+05:30",
+    "shipped_at": "2026-09-06T15:33:48+05:30",
+    "delivered_at": "2026-09-09T17:33:48+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD869695343"
+  },
+  {
+    "order_id": "LC-1054",
+    "customer_name": "Kavya Mehta",
+    "email": "kavya.mehta70@example.com",
+    "phone": "+91 9015431610",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 2,
+        "price_inr": 6499
+      },
+      {
+        "sku": "AC-009",
+        "qty": 1,
+        "price_inr": 999
+      }
+    ],
+    "total_inr": 13997,
+    "status": "delivered",
+    "ordered_at": "2026-09-07T14:04:15+05:30",
+    "shipped_at": "2026-09-08T15:04:15+05:30",
+    "delivered_at": "2026-09-10T17:04:15+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3351658509"
+  },
+  {
+    "order_id": "LC-1055",
+    "customer_name": "Siddharth Sharma",
+    "email": "siddharth.sharma28@example.com",
+    "phone": "+91 9419082386",
+    "items": [
+      {
+        "sku": "BR-004",
+        "qty": 1,
+        "price_inr": 1899
+      }
+    ],
+    "total_inr": 1899,
+    "status": "delivered",
+    "ordered_at": "2026-09-08T14:02:32+05:30",
+    "shipped_at": "2026-09-08T19:02:32+05:30",
+    "delivered_at": "2026-09-11T20:02:32+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2051148294"
+  },
+  {
+    "order_id": "LC-1056",
+    "customer_name": "Suresh Iyer",
+    "email": "suresh.iyer2@example.com",
+    "phone": "+91 9542468542",
+    "items": [
+      {
+        "sku": "BN-001",
+        "qty": 1,
+        "price_inr": 499
+      }
+    ],
+    "total_inr": 499,
+    "status": "delivered",
+    "ordered_at": "2026-09-08T23:13:02+05:30",
+    "shipped_at": "2026-09-10T03:13:02+05:30",
+    "delivered_at": "2026-09-12T05:13:02+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD238637877"
+  },
+  {
+    "order_id": "LC-1057",
+    "customer_name": "Nikhil Patel",
+    "email": "nikhil.patel47@example.com",
+    "phone": "+91 9504965709",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 1,
+        "price_inr": 549
+      },
+      {
+        "sku": "BR-010",
+        "qty": 1,
+        "price_inr": 24999
+      }
+    ],
+    "total_inr": 25548,
+    "status": "returned",
+    "ordered_at": "2026-09-09T14:27:08+05:30",
+    "shipped_at": "2026-09-10T14:27:08+05:30",
+    "delivered_at": "2026-09-15T18:27:08+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL7660471393"
+  },
+  {
+    "order_id": "LC-1058",
+    "customer_name": "Kavya Reddy",
+    "email": "kavya.reddy52@example.com",
+    "phone": "+91 9940372056",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 3,
+        "price_inr": 549
+      },
+      {
+        "sku": "BR-009",
+        "qty": 1,
+        "price_inr": 1399
+      }
+    ],
+    "total_inr": 3046,
+    "status": "delivered",
+    "ordered_at": "2026-09-09T18:55:00+05:30",
+    "shipped_at": "2026-09-10T06:55:00+05:30",
+    "delivered_at": "2026-09-13T14:55:00+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9268771099"
+  },
+  {
+    "order_id": "LC-1059",
+    "customer_name": "Riya Rao",
+    "email": "riya.rao6@example.com",
+    "phone": "+91 9396220987",
+    "items": [
+      {
+        "sku": "BN-004",
+        "qty": 2,
+        "price_inr": 599
+      }
+    ],
+    "total_inr": 1198,
+    "status": "delivered",
+    "ordered_at": "2026-09-11T01:48:06+05:30",
+    "shipped_at": "2026-09-12T03:48:06+05:30",
+    "delivered_at": "2026-09-14T10:48:06+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL6896516480"
+  },
+  {
+    "order_id": "LC-1060",
+    "customer_name": "Kavya Naidu",
+    "email": "kavya.naidu2@example.com",
+    "phone": "+91 9701692984",
+    "items": [
+      {
+        "sku": "BR-008",
+        "qty": 2,
+        "price_inr": 6999
+      },
+      {
+        "sku": "AC-009",
+        "qty": 1,
+        "price_inr": 999
+      }
+    ],
+    "total_inr": 14997,
+    "status": "delivered",
+    "ordered_at": "2026-09-14T08:08:41+05:30",
+    "shipped_at": "2026-09-14T16:08:41+05:30",
+    "delivered_at": "2026-09-16T16:08:41+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT89760028"
+  },
+  {
+    "order_id": "LC-1061",
+    "customer_name": "Varun Gupta",
+    "email": "varun.gupta90@example.com",
+    "phone": "+91 9777921415",
+    "items": [
+      {
+        "sku": "BN-011",
+        "qty": 1,
+        "price_inr": 849
+      },
+      {
+        "sku": "BR-002",
+        "qty": 2,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 4447,
+    "status": "delivered",
+    "ordered_at": "2026-09-15T09:35:03+05:30",
+    "shipped_at": "2026-09-16T13:35:03+05:30",
+    "delivered_at": "2026-09-19T17:35:03+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3177466432"
+  },
+  {
+    "order_id": "LC-1062",
+    "customer_name": "Zoya Mehta",
+    "email": "zoya.mehta66@example.com",
+    "phone": "+91 9692271383",
+    "items": [
+      {
+        "sku": "KT-002",
+        "qty": 2,
+        "price_inr": 4499
+      },
+      {
+        "sku": "BN-006",
+        "qty": 2,
+        "price_inr": 529
+      }
+    ],
+    "total_inr": 10056,
+    "status": "delivered",
+    "ordered_at": "2026-09-15T10:41:10+05:30",
+    "shipped_at": "2026-09-15T19:41:10+05:30",
+    "delivered_at": "2026-09-19T21:41:10+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD899033212"
+  },
+  {
+    "order_id": "LC-1063",
+    "customer_name": "Imran Nair",
+    "email": "imran.nair42@example.com",
+    "phone": "+91 9798371763",
+    "items": [
+      {
+        "sku": "BN-014",
+        "qty": 2,
+        "price_inr": 649
+      }
+    ],
+    "total_inr": 1298,
+    "status": "delivered",
+    "ordered_at": "2026-09-16T11:55:44+05:30",
+    "shipped_at": "2026-09-17T15:55:44+05:30",
+    "delivered_at": "2026-09-22T16:55:44+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0295292074"
+  },
+  {
+    "order_id": "LC-1064",
+    "customer_name": "Varun Chatterjee",
+    "email": "varun.chatterjee82@example.com",
+    "phone": "+91 9845007485",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 1,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 549,
+    "status": "delivered",
+    "ordered_at": "2026-09-16T21:17:34+05:30",
+    "shipped_at": "2026-09-18T00:17:34+05:30",
+    "delivered_at": "2026-09-23T04:17:34+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0114594609"
+  },
+  {
+    "order_id": "LC-1065",
+    "customer_name": "Arjun Banerjee",
+    "email": "arjun.banerjee80@example.com",
+    "phone": "+91 9610101954",
+    "items": [
+      {
+        "sku": "GR-008",
+        "qty": 1,
+        "price_inr": 10499
+      },
+      {
+        "sku": "GR-001",
+        "qty": 1,
+        "price_inr": 2499
+      },
+      {
+        "sku": "BR-006",
+        "qty": 1,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 14197,
+    "status": "delivered",
+    "ordered_at": "2026-09-16T23:20:55+05:30",
+    "shipped_at": "2026-09-17T17:20:55+05:30",
+    "delivered_at": "2026-09-19T21:20:55+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT08378195"
+  },
+  {
+    "order_id": "LC-1066",
+    "customer_name": "Nikhil Banerjee",
+    "email": "nikhil.banerjee22@example.com",
+    "phone": "+91 9188904995",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 1,
+        "price_inr": 6499
+      },
+      {
+        "sku": "BN-001",
+        "qty": 2,
+        "price_inr": 499
+      }
+    ],
+    "total_inr": 7497,
+    "status": "delivered",
+    "ordered_at": "2026-09-17T05:07:04+05:30",
+    "shipped_at": "2026-09-18T01:07:04+05:30",
+    "delivered_at": "2026-09-22T04:07:04+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT21025490"
+  },
+  {
+    "order_id": "LC-1067",
+    "customer_name": "Rahul Iyer",
+    "email": "rahul.iyer93@example.com",
+    "phone": "+91 9805949806",
+    "items": [
+      {
+        "sku": "BR-004",
+        "qty": 2,
+        "price_inr": 1899
+      },
+      {
+        "sku": "BR-007",
+        "qty": 1,
+        "price_inr": 1599
+      }
+    ],
+    "total_inr": 5397,
+    "status": "delivered",
+    "ordered_at": "2026-09-17T09:45:25+05:30",
+    "shipped_at": "2026-09-17T20:45:25+05:30",
+    "delivered_at": "2026-09-23T03:45:25+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT51685424"
+  },
+  {
+    "order_id": "LC-1068",
+    "customer_name": "Diya Joshi",
+    "email": "diya.joshi3@example.com",
+    "phone": "+91 9694266981",
+    "items": [
+      {
+        "sku": "KT-005",
+        "qty": 1,
+        "price_inr": 2999
+      },
+      {
+        "sku": "BN-005",
+        "qty": 2,
+        "price_inr": 549
+      },
+      {
+        "sku": "AC-010",
+        "qty": 1,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 5296,
+    "status": "delivered",
+    "ordered_at": "2026-09-17T21:35:47+05:30",
+    "shipped_at": "2026-09-18T19:35:47+05:30",
+    "delivered_at": "2026-09-23T00:35:47+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL1863405613"
+  },
+  {
+    "order_id": "LC-1069",
+    "customer_name": "Harini Banerjee",
+    "email": "harini.banerjee73@example.com",
+    "phone": "+91 9180441861",
+    "items": [
+      {
+        "sku": "BR-008",
+        "qty": 1,
+        "price_inr": 6999
+      }
+    ],
+    "total_inr": 6999,
+    "status": "delivered",
+    "ordered_at": "2026-09-18T03:52:22+05:30",
+    "shipped_at": "2026-09-18T22:52:22+05:30",
+    "delivered_at": "2026-09-24T23:52:22+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3074777638"
+  },
+  {
+    "order_id": "LC-1070",
+    "customer_name": "Deepak Rao",
+    "email": "deepak.rao64@example.com",
+    "phone": "+91 9246641220",
+    "items": [
+      {
+        "sku": "GR-003",
+        "qty": 1,
+        "price_inr": 5499
+      },
+      {
+        "sku": "BN-005",
+        "qty": 2,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 6597,
+    "status": "delivered",
+    "ordered_at": "2026-09-18T12:35:13+05:30",
+    "shipped_at": "2026-09-19T00:35:13+05:30",
+    "delivered_at": "2026-09-21T04:35:13+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD954618075"
+  },
+  {
+    "order_id": "LC-1071",
+    "customer_name": "Karthik Das",
+    "email": "karthik.das33@example.com",
+    "phone": "+91 9999617978",
+    "items": [
+      {
+        "sku": "BN-013",
+        "qty": 1,
+        "price_inr": 899
+      },
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      }
+    ],
+    "total_inr": 8398,
+    "status": "delivered",
+    "ordered_at": "2026-09-19T09:51:50+05:30",
+    "shipped_at": "2026-09-20T07:51:50+05:30",
+    "delivered_at": "2026-09-22T09:51:50+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT57978176"
+  },
+  {
+    "order_id": "LC-1072",
+    "customer_name": "Nandini Joshi",
+    "email": "nandini.joshi24@example.com",
+    "phone": "+91 9448717748",
+    "items": [
+      {
+        "sku": "BN-009",
+        "qty": 2,
+        "price_inr": 799
+      },
+      {
+        "sku": "KT-004",
+        "qty": 2,
+        "price_inr": 7499
+      }
+    ],
+    "total_inr": 16596,
+    "status": "delivered",
+    "ordered_at": "2026-09-19T11:20:52+05:30",
+    "shipped_at": "2026-09-19T16:20:52+05:30",
+    "delivered_at": "2026-09-23T21:20:52+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL8367088785"
+  },
+  {
+    "order_id": "LC-1073",
+    "customer_name": "Pooja Mehta",
+    "email": "pooja.mehta68@example.com",
+    "phone": "+91 9077785457",
+    "items": [
+      {
+        "sku": "AC-003",
+        "qty": 1,
+        "price_inr": 349
+      },
+      {
+        "sku": "BR-010",
+        "qty": 1,
+        "price_inr": 24999
+      }
+    ],
+    "total_inr": 25348,
+    "status": "returned",
+    "ordered_at": "2026-09-21T06:13:51+05:30",
+    "shipped_at": "2026-09-21T15:13:51+05:30",
+    "delivered_at": "2026-09-23T16:13:51+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT17229035"
+  },
+  {
+    "order_id": "LC-1074",
+    "customer_name": "Sneha Iyer",
+    "email": "sneha.iyer94@example.com",
+    "phone": "+91 9435115937",
+    "items": [
+      {
+        "sku": "GR-008",
+        "qty": 2,
+        "price_inr": 10499
+      }
+    ],
+    "total_inr": 20998,
+    "status": "delivered",
+    "ordered_at": "2026-09-21T12:44:49+05:30",
+    "shipped_at": "2026-09-22T11:44:49+05:30",
+    "delivered_at": "2026-09-28T13:44:49+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT38327174"
+  },
+  {
+    "order_id": "LC-1075",
+    "customer_name": "Harini Das",
+    "email": "harini.das99@example.com",
+    "phone": "+91 9877132744",
+    "items": [
+      {
+        "sku": "BR-005",
+        "qty": 2,
+        "price_inr": 2499
+      },
+      {
+        "sku": "BN-003",
+        "qty": 2,
+        "price_inr": 579
+      }
+    ],
+    "total_inr": 6156,
+    "status": "delivered",
+    "ordered_at": "2026-09-21T15:41:40+05:30",
+    "shipped_at": "2026-09-22T20:41:40+05:30",
+    "delivered_at": "2026-09-27T03:41:40+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD473231245"
+  },
+  {
+    "order_id": "LC-1076",
+    "customer_name": "Nandini Sharma",
+    "email": "nandini.sharma38@example.com",
+    "phone": "+91 9957441586",
+    "items": [
+      {
+        "sku": "BR-007",
+        "qty": 2,
+        "price_inr": 1599
+      },
+      {
+        "sku": "GR-003",
+        "qty": 1,
+        "price_inr": 5499
+      }
+    ],
+    "total_inr": 8697,
+    "status": "delivered",
+    "ordered_at": "2026-09-22T02:03:02+05:30",
+    "shipped_at": "2026-09-22T12:03:02+05:30",
+    "delivered_at": "2026-09-28T14:03:02+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3143359183"
+  },
+  {
+    "order_id": "LC-1077",
+    "customer_name": "Isha Gupta",
+    "email": "isha.gupta79@example.com",
+    "phone": "+91 9027105286",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 1,
+        "price_inr": 6499
+      },
+      {
+        "sku": "BR-001",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 7798,
+    "status": "delivered",
+    "ordered_at": "2026-09-22T05:51:44+05:30",
+    "shipped_at": "2026-09-22T10:51:44+05:30",
+    "delivered_at": "2026-09-26T12:51:44+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL5116269583"
+  },
+  {
+    "order_id": "LC-1078",
+    "customer_name": "Diya Naidu",
+    "email": "diya.naidu22@example.com",
+    "phone": "+91 9348883022",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 2,
+        "price_inr": 549
+      },
+      {
+        "sku": "GR-002",
+        "qty": 1,
+        "price_inr": 3999
+      }
+    ],
+    "total_inr": 5097,
+    "status": "delivered",
+    "ordered_at": "2026-09-23T06:55:47+05:30",
+    "shipped_at": "2026-09-23T13:55:47+05:30",
+    "delivered_at": "2026-09-29T16:55:47+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD007146555"
+  },
+  {
+    "order_id": "LC-1079",
+    "customer_name": "Isha Chatterjee",
+    "email": "isha.chatterjee30@example.com",
+    "phone": "+91 9548344744",
+    "items": [
+      {
+        "sku": "AC-002",
+        "qty": 1,
+        "price_inr": 299
+      },
+      {
+        "sku": "GR-003",
+        "qty": 1,
+        "price_inr": 5499
+      }
+    ],
+    "total_inr": 5798,
+    "status": "delivered",
+    "ordered_at": "2026-09-23T11:24:49+05:30",
+    "shipped_at": "2026-09-23T23:24:49+05:30",
+    "delivered_at": "2026-09-30T03:24:49+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD059061922"
+  },
+  {
+    "order_id": "LC-1080",
+    "customer_name": "Lakshmi Joshi",
+    "email": "lakshmi.joshi25@example.com",
+    "phone": "+91 9873037526",
+    "items": [
+      {
+        "sku": "AC-001",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 1499,
+    "status": "delivered",
+    "ordered_at": "2026-09-23T13:04:43+05:30",
+    "shipped_at": "2026-09-24T19:04:43+05:30",
+    "delivered_at": "2026-09-28T22:04:43+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT92981703"
+  },
+  {
+    "order_id": "LC-1081",
+    "customer_name": "Priya Sharma",
+    "email": "priya.sharma89@example.com",
+    "phone": "+91 9370730809",
+    "items": [
+      {
+        "sku": "BN-009",
+        "qty": 2,
+        "price_inr": 799
+      },
+      {
+        "sku": "BN-011",
+        "qty": 1,
+        "price_inr": 849
+      }
+    ],
+    "total_inr": 2447,
+    "status": "delivered",
+    "ordered_at": "2026-09-24T12:11:26+05:30",
+    "shipped_at": "2026-09-25T03:11:26+05:30",
+    "delivered_at": "2026-09-27T11:11:26+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD761253982"
+  },
+  {
+    "order_id": "LC-1082",
+    "customer_name": "Vivaan Bose",
+    "email": "vivaan.bose89@example.com",
+    "phone": "+91 9172614225",
+    "items": [
+      {
+        "sku": "BR-003",
+        "qty": 2,
+        "price_inr": 1499
+      },
+      {
+        "sku": "BN-006",
+        "qty": 1,
+        "price_inr": 529
+      }
+    ],
+    "total_inr": 3527,
+    "status": "delivered",
+    "ordered_at": "2026-09-24T12:50:55+05:30",
+    "shipped_at": "2026-09-24T21:50:55+05:30",
+    "delivered_at": "2026-09-30T01:50:55+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL5274368043"
+  },
+  {
+    "order_id": "LC-1083",
+    "customer_name": "Arjun Chatterjee",
+    "email": "arjun.chatterjee74@example.com",
+    "phone": "+91 9383299077",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 2,
+        "price_inr": 6499
+      }
+    ],
+    "total_inr": 12998,
+    "status": "delivered",
+    "ordered_at": "2026-09-24T12:57:43+05:30",
+    "shipped_at": "2026-09-25T13:57:43+05:30",
+    "delivered_at": "2026-09-29T20:57:43+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL7526058188"
+  },
+  {
+    "order_id": "LC-1084",
+    "customer_name": "Vivaan Verma",
+    "email": "vivaan.verma77@example.com",
+    "phone": "+91 9783768917",
+    "items": [
+      {
+        "sku": "BR-007",
+        "qty": 1,
+        "price_inr": 1599
+      }
+    ],
+    "total_inr": 1599,
+    "status": "delivered",
+    "ordered_at": "2026-09-24T20:23:00+05:30",
+    "shipped_at": "2026-09-25T15:23:00+05:30",
+    "delivered_at": "2026-09-29T22:23:00+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD601696764"
+  },
+  {
+    "order_id": "LC-1085",
+    "customer_name": "Suresh Singh",
+    "email": "suresh.singh13@example.com",
+    "phone": "+91 9547733374",
+    "items": [
+      {
+        "sku": "AC-008",
+        "qty": 1,
+        "price_inr": 799
+      },
+      {
+        "sku": "GR-004",
+        "qty": 1,
+        "price_inr": 8999
+      }
+    ],
+    "total_inr": 9798,
+    "status": "delivered",
+    "ordered_at": "2026-09-24T20:32:22+05:30",
+    "shipped_at": "2026-09-25T05:32:22+05:30",
+    "delivered_at": "2026-09-28T11:32:22+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9660268375"
+  },
+  {
+    "order_id": "LC-1086",
+    "customer_name": "Imran Rao",
+    "email": "imran.rao40@example.com",
+    "phone": "+91 9049153216",
+    "items": [
+      {
+        "sku": "AC-005",
+        "qty": 1,
+        "price_inr": 1299
+      },
+      {
+        "sku": "BN-002",
+        "qty": 1,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 1848,
+    "status": "returned",
+    "ordered_at": "2026-09-25T05:27:56+05:30",
+    "shipped_at": "2026-09-26T11:27:56+05:30",
+    "delivered_at": "2026-09-30T15:27:56+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL1811833178"
+  },
+  {
+    "order_id": "LC-1087",
+    "customer_name": "Lakshmi Das",
+    "email": "lakshmi.das87@example.com",
+    "phone": "+91 9651747260",
+    "items": [
+      {
+        "sku": "GR-002",
+        "qty": 1,
+        "price_inr": 3999
+      },
+      {
+        "sku": "BN-007",
+        "qty": 2,
+        "price_inr": 519
+      }
+    ],
+    "total_inr": 5037,
+    "status": "delivered",
+    "ordered_at": "2026-09-25T15:37:15+05:30",
+    "shipped_at": "2026-09-26T18:37:15+05:30",
+    "delivered_at": "2026-09-29T19:37:15+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3675127255"
+  },
+  {
+    "order_id": "LC-1088",
+    "customer_name": "Vivaan Iyer",
+    "email": "vivaan.iyer85@example.com",
+    "phone": "+91 9731648919",
+    "items": [
+      {
+        "sku": "GR-004",
+        "qty": 1,
+        "price_inr": 8999
+      }
+    ],
+    "total_inr": 8999,
+    "status": "delivered",
+    "ordered_at": "2026-09-25T19:30:02+05:30",
+    "shipped_at": "2026-09-26T12:30:02+05:30",
+    "delivered_at": "2026-10-01T14:30:02+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9736766697"
+  },
+  {
+    "order_id": "LC-1089",
+    "customer_name": "Priya Kulkarni",
+    "email": "priya.kulkarni71@example.com",
+    "phone": "+91 9480782695",
+    "items": [
+      {
+        "sku": "AC-002",
+        "qty": 1,
+        "price_inr": 299
+      }
+    ],
+    "total_inr": 299,
+    "status": "delivered",
+    "ordered_at": "2026-09-25T21:57:15+05:30",
+    "shipped_at": "2026-09-27T03:57:15+05:30",
+    "delivered_at": "2026-10-02T10:57:15+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9622459004"
+  },
+  {
+    "order_id": "LC-1090",
+    "customer_name": "Diya Reddy",
+    "email": "diya.reddy89@example.com",
+    "phone": "+91 9904708761",
+    "items": [
+      {
+        "sku": "BR-006",
+        "qty": 2,
+        "price_inr": 1199
+      },
+      {
+        "sku": "AC-001",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 3897,
+    "status": "delivered",
+    "ordered_at": "2026-09-26T12:16:31+05:30",
+    "shipped_at": "2026-09-27T02:16:31+05:30",
+    "delivered_at": "2026-09-29T04:16:31+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2196076386"
+  },
+  {
+    "order_id": "LC-1091",
+    "customer_name": "Suresh Rao",
+    "email": "suresh.rao94@example.com",
+    "phone": "+91 9745492845",
+    "items": [
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      },
+      {
+        "sku": "GR-003",
+        "qty": 2,
+        "price_inr": 5499
+      }
+    ],
+    "total_inr": 18497,
+    "status": "delivered",
+    "ordered_at": "2026-09-26T14:21:20+05:30",
+    "shipped_at": "2026-09-27T17:21:20+05:30",
+    "delivered_at": "2026-10-03T18:21:20+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2262492170"
+  },
+  {
+    "order_id": "LC-1092",
+    "customer_name": "Rohan Patel",
+    "email": "rohan.patel11@example.com",
+    "phone": "+91 9683995681",
+    "items": [
+      {
+        "sku": "AC-004",
+        "qty": 1,
+        "price_inr": 249
+      }
+    ],
+    "total_inr": 249,
+    "status": "delivered",
+    "ordered_at": "2026-09-26T14:26:34+05:30",
+    "shipped_at": "2026-09-26T19:26:34+05:30",
+    "delivered_at": "2026-09-30T22:26:34+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL1976043438"
+  },
+  {
+    "order_id": "LC-1093",
+    "customer_name": "Imran Pillai",
+    "email": "imran.pillai46@example.com",
+    "phone": "+91 9029775748",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 1,
+        "price_inr": 6499
+      }
+    ],
+    "total_inr": 6499,
+    "status": "cancelled",
+    "ordered_at": "2026-09-26T23:10:42+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1094",
+    "customer_name": "Riya Khan",
+    "email": "riya.khan64@example.com",
+    "phone": "+91 9628720453",
+    "items": [
+      {
+        "sku": "GR-006",
+        "qty": 1,
+        "price_inr": 12999
+      },
+      {
+        "sku": "GR-003",
+        "qty": 1,
+        "price_inr": 5499
+      },
+      {
+        "sku": "AC-007",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 19797,
+    "status": "delivered",
+    "ordered_at": "2026-09-27T06:18:35+05:30",
+    "shipped_at": "2026-09-27T12:18:35+05:30",
+    "delivered_at": "2026-09-30T15:18:35+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD093065477"
+  },
+  {
+    "order_id": "LC-1095",
+    "customer_name": "Siddharth Iyer",
+    "email": "siddharth.iyer55@example.com",
+    "phone": "+91 9120559328",
+    "items": [
+      {
+        "sku": "GR-008",
+        "qty": 1,
+        "price_inr": 10499
+      },
+      {
+        "sku": "BN-011",
+        "qty": 2,
+        "price_inr": 849
+      }
+    ],
+    "total_inr": 12197,
+    "status": "delivered",
+    "ordered_at": "2026-09-27T10:26:17+05:30",
+    "shipped_at": "2026-09-28T15:26:17+05:30",
+    "delivered_at": "2026-10-02T18:26:17+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD760012120"
+  },
+  {
+    "order_id": "LC-1096",
+    "customer_name": "Rohan Chatterjee",
+    "email": "rohan.chatterjee84@example.com",
+    "phone": "+91 9811462032",
+    "items": [
+      {
+        "sku": "BN-009",
+        "qty": 3,
+        "price_inr": 799
+      }
+    ],
+    "total_inr": 2397,
+    "status": "delivered",
+    "ordered_at": "2026-09-27T20:33:54+05:30",
+    "shipped_at": "2026-09-29T00:33:54+05:30",
+    "delivered_at": "2026-10-01T01:33:54+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL6576126524"
+  },
+  {
+    "order_id": "LC-1097",
+    "customer_name": "Farhan Chatterjee",
+    "email": "farhan.chatterjee37@example.com",
+    "phone": "+91 9421431357",
+    "items": [
+      {
+        "sku": "AC-011",
+        "qty": 1,
+        "price_inr": 1499
+      },
+      {
+        "sku": "BN-012",
+        "qty": 2,
+        "price_inr": 1799
+      },
+      {
+        "sku": "BR-008",
+        "qty": 1,
+        "price_inr": 6999
+      }
+    ],
+    "total_inr": 12096,
+    "status": "delivered",
+    "ordered_at": "2026-09-27T22:46:06+05:30",
+    "shipped_at": "2026-09-28T15:46:06+05:30",
+    "delivered_at": "2026-10-01T18:46:06+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT28510029"
+  },
+  {
+    "order_id": "LC-1098",
+    "customer_name": "Suresh Khan",
+    "email": "suresh.khan7@example.com",
+    "phone": "+91 9955211116",
+    "items": [
+      {
+        "sku": "GR-007",
+        "qty": 1,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 1999,
+    "status": "delivered",
+    "ordered_at": "2026-09-28T08:32:10+05:30",
+    "shipped_at": "2026-09-29T14:32:10+05:30",
+    "delivered_at": "2026-10-05T17:32:10+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT57999619"
+  },
+  {
+    "order_id": "LC-1099",
+    "customer_name": "Priya Khan",
+    "email": "priya.khan93@example.com",
+    "phone": "+91 9168445584",
+    "items": [
+      {
+        "sku": "BN-013",
+        "qty": 3,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 2697,
+    "status": "delivered",
+    "ordered_at": "2026-09-28T12:43:21+05:30",
+    "shipped_at": "2026-09-29T03:43:21+05:30",
+    "delivered_at": "2026-10-03T03:43:21+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD567216112"
+  },
+  {
+    "order_id": "LC-1100",
+    "customer_name": "Harini Iyer",
+    "email": "harini.iyer9@example.com",
+    "phone": "+91 9478499204",
+    "items": [
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      },
+      {
+        "sku": "BN-009",
+        "qty": 2,
+        "price_inr": 799
+      },
+      {
+        "sku": "GR-004",
+        "qty": 1,
+        "price_inr": 8999
+      }
+    ],
+    "total_inr": 18096,
+    "status": "delivered",
+    "ordered_at": "2026-09-28T15:32:48+05:30",
+    "shipped_at": "2026-09-29T15:32:48+05:30",
+    "delivered_at": "2026-10-05T18:32:48+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT94394911"
+  },
+  {
+    "order_id": "LC-1101",
+    "customer_name": "Nandini Sharma",
+    "email": "nandini.sharma38@example.com",
+    "phone": "+91 9684203407",
+    "items": [
+      {
+        "sku": "AC-009",
+        "qty": 1,
+        "price_inr": 999
+      },
+      {
+        "sku": "AC-008",
+        "qty": 1,
+        "price_inr": 799
+      }
+    ],
+    "total_inr": 1798,
+    "status": "delivered",
+    "ordered_at": "2026-09-28T19:35:22+05:30",
+    "shipped_at": "2026-09-29T11:35:22+05:30",
+    "delivered_at": "2026-10-02T16:35:22+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT01919652"
+  },
+  {
+    "order_id": "LC-1102",
+    "customer_name": "Isha Banerjee",
+    "email": "isha.banerjee71@example.com",
+    "phone": "+91 9753070015",
+    "items": [
+      {
+        "sku": "BN-001",
+        "qty": 1,
+        "price_inr": 499
+      }
+    ],
+    "total_inr": 499,
+    "status": "delivered",
+    "ordered_at": "2026-09-28T20:37:31+05:30",
+    "shipped_at": "2026-09-29T10:37:31+05:30",
+    "delivered_at": "2026-10-05T17:37:31+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0533656200"
+  },
+  {
+    "order_id": "LC-1103",
+    "customer_name": "Venkat Mehta",
+    "email": "venkat.mehta48@example.com",
+    "phone": "+91 9293131390",
+    "items": [
+      {
+        "sku": "AC-001",
+        "qty": 1,
+        "price_inr": 1499
+      },
+      {
+        "sku": "GR-007",
+        "qty": 1,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 3498,
+    "status": "returned",
+    "ordered_at": "2026-09-29T03:42:32+05:30",
+    "shipped_at": "2026-09-29T22:42:32+05:30",
+    "delivered_at": "2026-10-03T05:42:32+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD722459949"
+  },
+  {
+    "order_id": "LC-1104",
+    "customer_name": "Aarav Patel",
+    "email": "aarav.patel23@example.com",
+    "phone": "+91 9496567995",
+    "items": [
+      {
+        "sku": "BR-010",
+        "qty": 1,
+        "price_inr": 24999
+      },
+      {
+        "sku": "AC-009",
+        "qty": 1,
+        "price_inr": 999
+      }
+    ],
+    "total_inr": 25998,
+    "status": "delivered",
+    "ordered_at": "2026-09-29T21:05:12+05:30",
+    "shipped_at": "2026-09-30T22:05:12+05:30",
+    "delivered_at": "2026-10-06T23:05:12+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT69536066"
+  },
+  {
+    "order_id": "LC-1105",
+    "customer_name": "Harini Nair",
+    "email": "harini.nair8@example.com",
+    "phone": "+91 9083034549",
+    "items": [
+      {
+        "sku": "BN-014",
+        "qty": 2,
+        "price_inr": 649
+      },
+      {
+        "sku": "BR-010",
+        "qty": 1,
+        "price_inr": 24999
+      }
+    ],
+    "total_inr": 26297,
+    "status": "returned",
+    "ordered_at": "2026-09-30T17:44:11+05:30",
+    "shipped_at": "2026-10-01T05:44:11+05:30",
+    "delivered_at": "2026-10-04T06:44:11+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT07725755"
+  },
+  {
+    "order_id": "LC-1106",
+    "customer_name": "Rahul Chatterjee",
+    "email": "rahul.chatterjee52@example.com",
+    "phone": "+91 9410340751",
+    "items": [
+      {
+        "sku": "AC-002",
+        "qty": 2,
+        "price_inr": 299
+      }
+    ],
+    "total_inr": 598,
+    "status": "delivered",
+    "ordered_at": "2026-10-01T09:14:34+05:30",
+    "shipped_at": "2026-10-02T00:14:34+05:30",
+    "delivered_at": "2026-10-04T07:14:34+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL7394405143"
+  },
+  {
+    "order_id": "LC-1107",
+    "customer_name": "Karthik Patel",
+    "email": "karthik.patel85@example.com",
+    "phone": "+91 9721305161",
+    "items": [
+      {
+        "sku": "AC-004",
+        "qty": 1,
+        "price_inr": 249
+      },
+      {
+        "sku": "GR-002",
+        "qty": 2,
+        "price_inr": 3999
+      },
+      {
+        "sku": "BN-011",
+        "qty": 3,
+        "price_inr": 849
+      }
+    ],
+    "total_inr": 10794,
+    "status": "delivered",
+    "ordered_at": "2026-10-01T11:20:13+05:30",
+    "shipped_at": "2026-10-02T15:20:13+05:30",
+    "delivered_at": "2026-10-08T15:20:13+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD634546268"
+  },
+  {
+    "order_id": "LC-1108",
+    "customer_name": "Kavya Singh",
+    "email": "kavya.singh40@example.com",
+    "phone": "+91 9823768583",
+    "items": [
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      },
+      {
+        "sku": "GR-001",
+        "qty": 1,
+        "price_inr": 2499
+      }
+    ],
+    "total_inr": 9998,
+    "status": "delivered",
+    "ordered_at": "2026-10-02T11:47:34+05:30",
+    "shipped_at": "2026-10-03T05:47:34+05:30",
+    "delivered_at": "2026-10-07T06:47:34+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT70336996"
+  },
+  {
+    "order_id": "LC-1109",
+    "customer_name": "Varun Patel",
+    "email": "varun.patel14@example.com",
+    "phone": "+91 9785710424",
+    "items": [
+      {
+        "sku": "KT-004",
+        "qty": 2,
+        "price_inr": 7499
+      },
+      {
+        "sku": "BN-001",
+        "qty": 1,
+        "price_inr": 499
+      }
+    ],
+    "total_inr": 15497,
+    "status": "delivered",
+    "ordered_at": "2026-10-02T16:39:56+05:30",
+    "shipped_at": "2026-10-03T21:39:56+05:30",
+    "delivered_at": "2026-10-07T01:39:56+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT60237296"
+  },
+  {
+    "order_id": "LC-1110",
+    "customer_name": "Tanvi Nair",
+    "email": "tanvi.nair49@example.com",
+    "phone": "+91 9931095117",
+    "items": [
+      {
+        "sku": "BN-010",
+        "qty": 3,
+        "price_inr": 749
+      },
+      {
+        "sku": "BR-010",
+        "qty": 1,
+        "price_inr": 24999
+      },
+      {
+        "sku": "BN-009",
+        "qty": 2,
+        "price_inr": 799
+      }
+    ],
+    "total_inr": 28844,
+    "status": "delivered",
+    "ordered_at": "2026-10-02T21:20:15+05:30",
+    "shipped_at": "2026-10-03T22:20:15+05:30",
+    "delivered_at": "2026-10-07T00:20:15+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT53959893"
+  },
+  {
+    "order_id": "LC-1111",
+    "customer_name": "Sneha Sharma",
+    "email": "sneha.sharma80@example.com",
+    "phone": "+91 9596546205",
+    "items": [
+      {
+        "sku": "BN-007",
+        "qty": 2,
+        "price_inr": 519
+      }
+    ],
+    "total_inr": 1038,
+    "status": "delivered",
+    "ordered_at": "2026-10-03T02:35:29+05:30",
+    "shipped_at": "2026-10-03T18:35:29+05:30",
+    "delivered_at": "2026-10-06T19:35:29+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2144613439"
+  },
+  {
+    "order_id": "LC-1112",
+    "customer_name": "Ananya Kulkarni",
+    "email": "ananya.kulkarni94@example.com",
+    "phone": "+91 9950713534",
+    "items": [
+      {
+        "sku": "BN-015",
+        "qty": 3,
+        "price_inr": 539
+      },
+      {
+        "sku": "KT-003",
+        "qty": 2,
+        "price_inr": 5999
+      },
+      {
+        "sku": "AC-011",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 15114,
+    "status": "delivered",
+    "ordered_at": "2026-10-03T16:54:48+05:30",
+    "shipped_at": "2026-10-04T17:54:48+05:30",
+    "delivered_at": "2026-10-07T19:54:48+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD861625896"
+  },
+  {
+    "order_id": "LC-1113",
+    "customer_name": "Sneha Rao",
+    "email": "sneha.rao50@example.com",
+    "phone": "+91 9818812064",
+    "items": [
+      {
+        "sku": "BN-012",
+        "qty": 1,
+        "price_inr": 1799
+      },
+      {
+        "sku": "BN-003",
+        "qty": 2,
+        "price_inr": 579
+      }
+    ],
+    "total_inr": 2957,
+    "status": "delivered",
+    "ordered_at": "2026-10-04T01:21:23+05:30",
+    "shipped_at": "2026-10-05T05:21:23+05:30",
+    "delivered_at": "2026-10-10T13:21:23+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD064173596"
+  },
+  {
+    "order_id": "LC-1114",
+    "customer_name": "Aditya Verma",
+    "email": "aditya.verma73@example.com",
+    "phone": "+91 9241080405",
+    "items": [
+      {
+        "sku": "GR-006",
+        "qty": 1,
+        "price_inr": 12999
+      },
+      {
+        "sku": "AC-012",
+        "qty": 1,
+        "price_inr": 699
+      }
+    ],
+    "total_inr": 13698,
+    "status": "cancelled",
+    "ordered_at": "2026-10-04T03:02:19+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1115",
+    "customer_name": "Neha Banerjee",
+    "email": "neha.banerjee1@example.com",
+    "phone": "+91 9254412117",
+    "items": [
+      {
+        "sku": "KT-001",
+        "qty": 2,
+        "price_inr": 1999
+      },
+      {
+        "sku": "AC-005",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 5297,
+    "status": "delivered",
+    "ordered_at": "2026-10-04T14:59:53+05:30",
+    "shipped_at": "2026-10-05T10:59:53+05:30",
+    "delivered_at": "2026-10-07T16:59:53+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL6783184531"
+  },
+  {
+    "order_id": "LC-1116",
+    "customer_name": "Harini Banerjee",
+    "email": "harini.banerjee2@example.com",
+    "phone": "+91 9112515789",
+    "items": [
+      {
+        "sku": "BN-001",
+        "qty": 2,
+        "price_inr": 499
+      }
+    ],
+    "total_inr": 998,
+    "status": "delivered",
+    "ordered_at": "2026-10-04T22:31:29+05:30",
+    "shipped_at": "2026-10-05T11:31:29+05:30",
+    "delivered_at": "2026-10-09T19:31:29+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT20420468"
+  },
+  {
+    "order_id": "LC-1117",
+    "customer_name": "Meera Naidu",
+    "email": "meera.naidu4@example.com",
+    "phone": "+91 9307489919",
+    "items": [
+      {
+        "sku": "BN-010",
+        "qty": 2,
+        "price_inr": 749
+      },
+      {
+        "sku": "BN-002",
+        "qty": 1,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 2047,
+    "status": "delivered",
+    "ordered_at": "2026-10-05T04:11:05+05:30",
+    "shipped_at": "2026-10-05T14:11:05+05:30",
+    "delivered_at": "2026-10-10T21:11:05+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD868416859"
+  },
+  {
+    "order_id": "LC-1118",
+    "customer_name": "Neha Naidu",
+    "email": "neha.naidu33@example.com",
+    "phone": "+91 9813278538",
+    "items": [
+      {
+        "sku": "GR-006",
+        "qty": 1,
+        "price_inr": 12999
+      },
+      {
+        "sku": "GR-003",
+        "qty": 1,
+        "price_inr": 5499
+      }
+    ],
+    "total_inr": 18498,
+    "status": "delivered",
+    "ordered_at": "2026-10-05T10:21:34+05:30",
+    "shipped_at": "2026-10-05T23:21:34+05:30",
+    "delivered_at": "2026-10-11T04:21:34+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT86584619"
+  },
+  {
+    "order_id": "LC-1119",
+    "customer_name": "Arjun Gupta",
+    "email": "arjun.gupta35@example.com",
+    "phone": "+91 9389032706",
+    "items": [
+      {
+        "sku": "BN-003",
+        "qty": 2,
+        "price_inr": 579
+      },
+      {
+        "sku": "BR-008",
+        "qty": 2,
+        "price_inr": 6999
+      },
+      {
+        "sku": "BR-010",
+        "qty": 2,
+        "price_inr": 24999
+      }
+    ],
+    "total_inr": 65154,
+    "status": "delivered",
+    "ordered_at": "2026-10-05T15:30:29+05:30",
+    "shipped_at": "2026-10-05T20:30:29+05:30",
+    "delivered_at": "2026-10-09T20:30:29+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT14861241"
+  },
+  {
+    "order_id": "LC-1120",
+    "customer_name": "Tanvi Das",
+    "email": "tanvi.das22@example.com",
+    "phone": "+91 9989686703",
+    "items": [
+      {
+        "sku": "BR-010",
+        "qty": 1,
+        "price_inr": 24999
+      }
+    ],
+    "total_inr": 24999,
+    "status": "delivered",
+    "ordered_at": "2026-10-06T13:04:58+05:30",
+    "shipped_at": "2026-10-07T13:04:58+05:30",
+    "delivered_at": "2026-10-09T16:04:58+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT27192724"
+  },
+  {
+    "order_id": "LC-1121",
+    "customer_name": "Harini Menon",
+    "email": "harini.menon19@example.com",
+    "phone": "+91 9391131709",
+    "items": [
+      {
+        "sku": "BR-001",
+        "qty": 2,
+        "price_inr": 1299
+      },
+      {
+        "sku": "AC-009",
+        "qty": 1,
+        "price_inr": 999
+      }
+    ],
+    "total_inr": 3597,
+    "status": "delivered",
+    "ordered_at": "2026-10-06T15:15:32+05:30",
+    "shipped_at": "2026-10-07T07:15:32+05:30",
+    "delivered_at": "2026-10-12T12:15:32+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL4081950739"
+  },
+  {
+    "order_id": "LC-1122",
+    "customer_name": "Vivaan Joshi",
+    "email": "vivaan.joshi87@example.com",
+    "phone": "+91 9230405418",
+    "items": [
+      {
+        "sku": "BR-009",
+        "qty": 2,
+        "price_inr": 1399
+      },
+      {
+        "sku": "AC-004",
+        "qty": 1,
+        "price_inr": 249
+      }
+    ],
+    "total_inr": 3047,
+    "status": "delivered",
+    "ordered_at": "2026-10-06T19:43:35+05:30",
+    "shipped_at": "2026-10-07T18:43:35+05:30",
+    "delivered_at": "2026-10-13T00:43:35+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT31498509"
+  },
+  {
+    "order_id": "LC-1123",
+    "customer_name": "Meera Rao",
+    "email": "meera.rao89@example.com",
+    "phone": "+91 9446512292",
+    "items": [
+      {
+        "sku": "AC-002",
+        "qty": 1,
+        "price_inr": 299
+      },
+      {
+        "sku": "BR-003",
+        "qty": 2,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 3297,
+    "status": "delivered",
+    "ordered_at": "2026-10-08T19:14:40+05:30",
+    "shipped_at": "2026-10-09T06:14:40+05:30",
+    "delivered_at": "2026-10-11T08:14:40+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD277926270"
+  },
+  {
+    "order_id": "LC-1124",
+    "customer_name": "Diya Khan",
+    "email": "diya.khan94@example.com",
+    "phone": "+91 9232456505",
+    "items": [
+      {
+        "sku": "GR-004",
+        "qty": 2,
+        "price_inr": 8999
+      },
+      {
+        "sku": "BN-011",
+        "qty": 1,
+        "price_inr": 849
+      },
+      {
+        "sku": "GR-006",
+        "qty": 2,
+        "price_inr": 12999
+      }
+    ],
+    "total_inr": 44845,
+    "status": "delivered",
+    "ordered_at": "2026-10-08T22:01:24+05:30",
+    "shipped_at": "2026-10-09T08:01:24+05:30",
+    "delivered_at": "2026-10-11T16:01:24+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL1554860802"
+  },
+  {
+    "order_id": "LC-1125",
+    "customer_name": "Nikhil Rao",
+    "email": "nikhil.rao44@example.com",
+    "phone": "+91 9338232837",
+    "items": [
+      {
+        "sku": "KT-002",
+        "qty": 1,
+        "price_inr": 4499
+      },
+      {
+        "sku": "BR-002",
+        "qty": 1,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 6298,
+    "status": "delivered",
+    "ordered_at": "2026-10-09T07:48:42+05:30",
+    "shipped_at": "2026-10-09T15:48:42+05:30",
+    "delivered_at": "2026-10-12T15:48:42+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD412943214"
+  },
+  {
+    "order_id": "LC-1126",
+    "customer_name": "Neha Banerjee",
+    "email": "neha.banerjee25@example.com",
+    "phone": "+91 9590855479",
+    "items": [
+      {
+        "sku": "BN-001",
+        "qty": 1,
+        "price_inr": 499
+      },
+      {
+        "sku": "GR-004",
+        "qty": 1,
+        "price_inr": 8999
+      },
+      {
+        "sku": "GR-006",
+        "qty": 1,
+        "price_inr": 12999
+      }
+    ],
+    "total_inr": 22497,
+    "status": "returned",
+    "ordered_at": "2026-10-10T03:18:45+05:30",
+    "shipped_at": "2026-10-10T12:18:45+05:30",
+    "delivered_at": "2026-10-13T20:18:45+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9807304652"
+  },
+  {
+    "order_id": "LC-1127",
+    "customer_name": "Vivaan Bose",
+    "email": "vivaan.bose55@example.com",
+    "phone": "+91 9536460488",
+    "items": [
+      {
+        "sku": "KT-005",
+        "qty": 1,
+        "price_inr": 2999
+      },
+      {
+        "sku": "BR-009",
+        "qty": 1,
+        "price_inr": 1399
+      }
+    ],
+    "total_inr": 4398,
+    "status": "cancelled",
+    "ordered_at": "2026-10-11T02:02:48+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1128",
+    "customer_name": "Sneha Pillai",
+    "email": "sneha.pillai25@example.com",
+    "phone": "+91 9531617591",
+    "items": [
+      {
+        "sku": "BN-008",
+        "qty": 3,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 2697,
+    "status": "delivered",
+    "ordered_at": "2026-10-11T23:54:41+05:30",
+    "shipped_at": "2026-10-12T12:54:41+05:30",
+    "delivered_at": "2026-10-14T16:54:41+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD946065426"
+  },
+  {
+    "order_id": "LC-1129",
+    "customer_name": "Arjun Chatterjee",
+    "email": "arjun.chatterjee97@example.com",
+    "phone": "+91 9971816473",
+    "items": [
+      {
+        "sku": "AC-004",
+        "qty": 2,
+        "price_inr": 249
+      }
+    ],
+    "total_inr": 498,
+    "status": "delivered",
+    "ordered_at": "2026-10-13T03:48:31+05:30",
+    "shipped_at": "2026-10-13T08:48:31+05:30",
+    "delivered_at": "2026-10-16T09:48:31+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD311145494"
+  },
+  {
+    "order_id": "LC-1130",
+    "customer_name": "Rahul Sharma",
+    "email": "rahul.sharma14@example.com",
+    "phone": "+91 9412325017",
+    "items": [
+      {
+        "sku": "BN-003",
+        "qty": 1,
+        "price_inr": 579
+      },
+      {
+        "sku": "AC-002",
+        "qty": 1,
+        "price_inr": 299
+      },
+      {
+        "sku": "BR-009",
+        "qty": 1,
+        "price_inr": 1399
+      }
+    ],
+    "total_inr": 2277,
+    "status": "delivered",
+    "ordered_at": "2026-10-13T03:58:36+05:30",
+    "shipped_at": "2026-10-13T16:58:36+05:30",
+    "delivered_at": "2026-10-17T22:58:36+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3705006201"
+  },
+  {
+    "order_id": "LC-1131",
+    "customer_name": "Priya Rao",
+    "email": "priya.rao93@example.com",
+    "phone": "+91 9134207794",
+    "items": [
+      {
+        "sku": "BN-002",
+        "qty": 3,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 1647,
+    "status": "delivered",
+    "ordered_at": "2026-10-13T06:34:04+05:30",
+    "shipped_at": "2026-10-14T10:34:04+05:30",
+    "delivered_at": "2026-10-17T13:34:04+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT68764807"
+  },
+  {
+    "order_id": "LC-1132",
+    "customer_name": "Arjun Menon",
+    "email": "arjun.menon96@example.com",
+    "phone": "+91 9393518635",
+    "items": [
+      {
+        "sku": "KT-003",
+        "qty": 1,
+        "price_inr": 5999
+      },
+      {
+        "sku": "BN-009",
+        "qty": 3,
+        "price_inr": 799
+      }
+    ],
+    "total_inr": 8396,
+    "status": "cancelled",
+    "ordered_at": "2026-10-13T07:57:38+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1133",
+    "customer_name": "Pooja Banerjee",
+    "email": "pooja.banerjee46@example.com",
+    "phone": "+91 9720710136",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 2,
+        "price_inr": 549
+      },
+      {
+        "sku": "BR-009",
+        "qty": 1,
+        "price_inr": 1399
+      }
+    ],
+    "total_inr": 2497,
+    "status": "delivered",
+    "ordered_at": "2026-10-14T01:23:12+05:30",
+    "shipped_at": "2026-10-14T12:23:12+05:30",
+    "delivered_at": "2026-10-17T16:23:12+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT30304941"
+  },
+  {
+    "order_id": "LC-1134",
+    "customer_name": "Deepak Gupta",
+    "email": "deepak.gupta39@example.com",
+    "phone": "+91 9088621547",
+    "items": [
+      {
+        "sku": "GR-001",
+        "qty": 1,
+        "price_inr": 2499
+      },
+      {
+        "sku": "BR-005",
+        "qty": 1,
+        "price_inr": 2499
+      }
+    ],
+    "total_inr": 4998,
+    "status": "delivered",
+    "ordered_at": "2026-10-15T00:31:14+05:30",
+    "shipped_at": "2026-10-15T17:31:14+05:30",
+    "delivered_at": "2026-10-18T01:31:14+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL6941553635"
+  },
+  {
+    "order_id": "LC-1135",
+    "customer_name": "Neha Nair",
+    "email": "neha.nair45@example.com",
+    "phone": "+91 9108828325",
+    "items": [
+      {
+        "sku": "AC-003",
+        "qty": 2,
+        "price_inr": 349
+      }
+    ],
+    "total_inr": 698,
+    "status": "delivered",
+    "ordered_at": "2026-10-16T07:28:07+05:30",
+    "shipped_at": "2026-10-17T09:28:07+05:30",
+    "delivered_at": "2026-10-21T15:28:07+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD210229858"
+  },
+  {
+    "order_id": "LC-1136",
+    "customer_name": "Farhan Naidu",
+    "email": "farhan.naidu56@example.com",
+    "phone": "+91 9318476842",
+    "items": [
+      {
+        "sku": "AC-006",
+        "qty": 1,
+        "price_inr": 599
+      },
+      {
+        "sku": "BN-012",
+        "qty": 3,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 5996,
+    "status": "delivered",
+    "ordered_at": "2026-10-16T08:54:44+05:30",
+    "shipped_at": "2026-10-17T13:54:44+05:30",
+    "delivered_at": "2026-10-21T17:54:44+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT14652583"
+  },
+  {
+    "order_id": "LC-1137",
+    "customer_name": "Nikhil Naidu",
+    "email": "nikhil.naidu39@example.com",
+    "phone": "+91 9256493354",
+    "items": [
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      }
+    ],
+    "total_inr": 7499,
+    "status": "delivered",
+    "ordered_at": "2026-10-16T21:54:07+05:30",
+    "shipped_at": "2026-10-18T01:54:07+05:30",
+    "delivered_at": "2026-10-24T02:54:07+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT06377117"
+  },
+  {
+    "order_id": "LC-1138",
+    "customer_name": "Diya Joshi",
+    "email": "diya.joshi15@example.com",
+    "phone": "+91 9534828646",
+    "items": [
+      {
+        "sku": "BR-004",
+        "qty": 2,
+        "price_inr": 1899
+      },
+      {
+        "sku": "GR-001",
+        "qty": 1,
+        "price_inr": 2499
+      }
+    ],
+    "total_inr": 6297,
+    "status": "delivered",
+    "ordered_at": "2026-10-16T22:04:33+05:30",
+    "shipped_at": "2026-10-17T09:04:33+05:30",
+    "delivered_at": "2026-10-22T13:04:33+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9260293258"
+  },
+  {
+    "order_id": "LC-1139",
+    "customer_name": "Varun Gupta",
+    "email": "varun.gupta11@example.com",
+    "phone": "+91 9547850421",
+    "items": [
+      {
+        "sku": "BN-014",
+        "qty": 3,
+        "price_inr": 649
+      },
+      {
+        "sku": "KT-002",
+        "qty": 2,
+        "price_inr": 4499
+      },
+      {
+        "sku": "BR-004",
+        "qty": 1,
+        "price_inr": 1899
+      }
+    ],
+    "total_inr": 12844,
+    "status": "delivered",
+    "ordered_at": "2026-10-17T08:38:45+05:30",
+    "shipped_at": "2026-10-17T20:38:45+05:30",
+    "delivered_at": "2026-10-23T23:38:45+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL6202292002"
+  },
+  {
+    "order_id": "LC-1140",
+    "customer_name": "Zoya Sharma",
+    "email": "zoya.sharma38@example.com",
+    "phone": "+91 9683504061",
+    "items": [
+      {
+        "sku": "BN-007",
+        "qty": 2,
+        "price_inr": 519
+      }
+    ],
+    "total_inr": 1038,
+    "status": "delivered",
+    "ordered_at": "2026-10-17T17:54:56+05:30",
+    "shipped_at": "2026-10-18T14:54:56+05:30",
+    "delivered_at": "2026-10-22T21:54:56+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD927100171"
+  },
+  {
+    "order_id": "LC-1141",
+    "customer_name": "Priya Singh",
+    "email": "priya.singh11@example.com",
+    "phone": "+91 9059813417",
+    "items": [
+      {
+        "sku": "KT-005",
+        "qty": 1,
+        "price_inr": 2999
+      }
+    ],
+    "total_inr": 2999,
+    "status": "delivered",
+    "ordered_at": "2026-10-20T01:31:47+05:30",
+    "shipped_at": "2026-10-20T14:31:47+05:30",
+    "delivered_at": "2026-10-22T20:31:47+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT86303748"
+  },
+  {
+    "order_id": "LC-1142",
+    "customer_name": "Vivaan Rao",
+    "email": "vivaan.rao46@example.com",
+    "phone": "+91 9763375578",
+    "items": [
+      {
+        "sku": "BR-006",
+        "qty": 2,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 2398,
+    "status": "delivered",
+    "ordered_at": "2026-10-20T06:48:06+05:30",
+    "shipped_at": "2026-10-21T11:48:06+05:30",
+    "delivered_at": "2026-10-24T15:48:06+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT32796030"
+  },
+  {
+    "order_id": "LC-1143",
+    "customer_name": "Nandini Naidu",
+    "email": "nandini.naidu13@example.com",
+    "phone": "+91 9546827825",
+    "items": [
+      {
+        "sku": "GR-001",
+        "qty": 1,
+        "price_inr": 2499
+      },
+      {
+        "sku": "BR-002",
+        "qty": 1,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 4298,
+    "status": "delivered",
+    "ordered_at": "2026-10-20T10:15:57+05:30",
+    "shipped_at": "2026-10-20T23:15:57+05:30",
+    "delivered_at": "2026-10-23T02:15:57+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD483407834"
+  },
+  {
+    "order_id": "LC-1144",
+    "customer_name": "Diya Banerjee",
+    "email": "diya.banerjee75@example.com",
+    "phone": "+91 9741505017",
+    "items": [
+      {
+        "sku": "BN-001",
+        "qty": 1,
+        "price_inr": 499
+      }
+    ],
+    "total_inr": 499,
+    "status": "delivered",
+    "ordered_at": "2026-10-20T16:02:44+05:30",
+    "shipped_at": "2026-10-21T11:02:44+05:30",
+    "delivered_at": "2026-10-24T18:02:44+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0024094407"
+  },
+  {
+    "order_id": "LC-1145",
+    "customer_name": "Harini Iyer",
+    "email": "harini.iyer54@example.com",
+    "phone": "+91 9837083964",
+    "items": [
+      {
+        "sku": "GR-007",
+        "qty": 2,
+        "price_inr": 1999
+      },
+      {
+        "sku": "AC-009",
+        "qty": 2,
+        "price_inr": 999
+      }
+    ],
+    "total_inr": 5996,
+    "status": "delivered",
+    "ordered_at": "2026-10-21T21:51:20+05:30",
+    "shipped_at": "2026-10-22T12:51:20+05:30",
+    "delivered_at": "2026-10-28T12:51:20+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD449425526"
+  },
+  {
+    "order_id": "LC-1146",
+    "customer_name": "Riya Bose",
+    "email": "riya.bose39@example.com",
+    "phone": "+91 9324515576",
+    "items": [
+      {
+        "sku": "BN-012",
+        "qty": 2,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 3598,
+    "status": "delivered",
+    "ordered_at": "2026-10-21T21:52:02+05:30",
+    "shipped_at": "2026-10-23T00:52:02+05:30",
+    "delivered_at": "2026-10-28T02:52:02+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT99584702"
+  },
+  {
+    "order_id": "LC-1147",
+    "customer_name": "Vivaan Kulkarni",
+    "email": "vivaan.kulkarni29@example.com",
+    "phone": "+91 9226951835",
+    "items": [
+      {
+        "sku": "BN-002",
+        "qty": 3,
+        "price_inr": 549
+      },
+      {
+        "sku": "BR-009",
+        "qty": 2,
+        "price_inr": 1399
+      },
+      {
+        "sku": "BR-004",
+        "qty": 2,
+        "price_inr": 1899
+      }
+    ],
+    "total_inr": 8243,
+    "status": "delivered",
+    "ordered_at": "2026-10-22T19:13:31+05:30",
+    "shipped_at": "2026-10-23T22:13:31+05:30",
+    "delivered_at": "2026-10-27T23:13:31+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL1974727785"
+  },
+  {
+    "order_id": "LC-1148",
+    "customer_name": "Aarav Das",
+    "email": "aarav.das64@example.com",
+    "phone": "+91 9779765655",
+    "items": [
+      {
+        "sku": "BN-008",
+        "qty": 1,
+        "price_inr": 899
+      },
+      {
+        "sku": "BR-003",
+        "qty": 2,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 3897,
+    "status": "delivered",
+    "ordered_at": "2026-10-23T01:18:24+05:30",
+    "shipped_at": "2026-10-23T13:18:24+05:30",
+    "delivered_at": "2026-10-26T18:18:24+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3431255902"
+  },
+  {
+    "order_id": "LC-1149",
+    "customer_name": "Varun Singh",
+    "email": "varun.singh76@example.com",
+    "phone": "+91 9335177687",
+    "items": [
+      {
+        "sku": "BR-003",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 1499,
+    "status": "delivered",
+    "ordered_at": "2026-10-23T01:33:10+05:30",
+    "shipped_at": "2026-10-23T19:33:10+05:30",
+    "delivered_at": "2026-10-28T21:33:10+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD878701250"
+  },
+  {
+    "order_id": "LC-1150",
+    "customer_name": "Varun Joshi",
+    "email": "varun.joshi90@example.com",
+    "phone": "+91 9279931531",
+    "items": [
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      },
+      {
+        "sku": "AC-003",
+        "qty": 1,
+        "price_inr": 349
+      }
+    ],
+    "total_inr": 7848,
+    "status": "delivered",
+    "ordered_at": "2026-10-23T04:48:44+05:30",
+    "shipped_at": "2026-10-23T11:48:44+05:30",
+    "delivered_at": "2026-10-29T16:48:44+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD976998119"
+  },
+  {
+    "order_id": "LC-1151",
+    "customer_name": "Imran Nair",
+    "email": "imran.nair32@example.com",
+    "phone": "+91 9455127203",
+    "items": [
+      {
+        "sku": "GR-003",
+        "qty": 1,
+        "price_inr": 5499
+      }
+    ],
+    "total_inr": 5499,
+    "status": "delivered",
+    "ordered_at": "2026-10-23T05:27:19+05:30",
+    "shipped_at": "2026-10-24T00:27:19+05:30",
+    "delivered_at": "2026-10-26T07:27:19+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT65610066"
+  },
+  {
+    "order_id": "LC-1152",
+    "customer_name": "Aarav Patel",
+    "email": "aarav.patel66@example.com",
+    "phone": "+91 9285723973",
+    "items": [
+      {
+        "sku": "BR-001",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 1299,
+    "status": "delivered",
+    "ordered_at": "2026-10-23T21:57:07+05:30",
+    "shipped_at": "2026-10-25T02:57:07+05:30",
+    "delivered_at": "2026-10-30T02:57:07+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT74074078"
+  },
+  {
+    "order_id": "LC-1153",
+    "customer_name": "Rahul Iyer",
+    "email": "rahul.iyer82@example.com",
+    "phone": "+91 9677805764",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 2,
+        "price_inr": 6499
+      }
+    ],
+    "total_inr": 12998,
+    "status": "delivered",
+    "ordered_at": "2026-10-24T03:31:02+05:30",
+    "shipped_at": "2026-10-24T08:31:02+05:30",
+    "delivered_at": "2026-10-26T11:31:02+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0457656885"
+  },
+  {
+    "order_id": "LC-1154",
+    "customer_name": "Arjun Bose",
+    "email": "arjun.bose57@example.com",
+    "phone": "+91 9216243667",
+    "items": [
+      {
+        "sku": "GR-004",
+        "qty": 1,
+        "price_inr": 8999
+      }
+    ],
+    "total_inr": 8999,
+    "status": "delivered",
+    "ordered_at": "2026-10-24T03:43:56+05:30",
+    "shipped_at": "2026-10-24T17:43:56+05:30",
+    "delivered_at": "2026-10-31T00:43:56+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2569151750"
+  },
+  {
+    "order_id": "LC-1155",
+    "customer_name": "Nikhil Chatterjee",
+    "email": "nikhil.chatterjee28@example.com",
+    "phone": "+91 9997246376",
+    "items": [
+      {
+        "sku": "BN-008",
+        "qty": 1,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 899,
+    "status": "delivered",
+    "ordered_at": "2026-10-24T09:47:31+05:30",
+    "shipped_at": "2026-10-25T11:47:31+05:30",
+    "delivered_at": "2026-10-31T17:47:31+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2820472817"
+  },
+  {
+    "order_id": "LC-1156",
+    "customer_name": "Neha Rao",
+    "email": "neha.rao64@example.com",
+    "phone": "+91 9043556838",
+    "items": [
+      {
+        "sku": "AC-008",
+        "qty": 1,
+        "price_inr": 799
+      },
+      {
+        "sku": "BN-011",
+        "qty": 1,
+        "price_inr": 849
+      }
+    ],
+    "total_inr": 1648,
+    "status": "delivered",
+    "ordered_at": "2026-10-24T19:50:13+05:30",
+    "shipped_at": "2026-10-25T00:50:13+05:30",
+    "delivered_at": "2026-10-29T02:50:13+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL7209226410"
+  },
+  {
+    "order_id": "LC-1157",
+    "customer_name": "Imran Patel",
+    "email": "imran.patel18@example.com",
+    "phone": "+91 9115263523",
+    "items": [
+      {
+        "sku": "BN-012",
+        "qty": 1,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 1799,
+    "status": "delivered",
+    "ordered_at": "2026-10-25T01:43:39+05:30",
+    "shipped_at": "2026-10-25T08:43:39+05:30",
+    "delivered_at": "2026-10-27T10:43:39+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL0065308280"
+  },
+  {
+    "order_id": "LC-1158",
+    "customer_name": "Arjun Bose",
+    "email": "arjun.bose98@example.com",
+    "phone": "+91 9590617641",
+    "items": [
+      {
+        "sku": "BN-003",
+        "qty": 3,
+        "price_inr": 579
+      }
+    ],
+    "total_inr": 1737,
+    "status": "delivered",
+    "ordered_at": "2026-10-25T01:47:50+05:30",
+    "shipped_at": "2026-10-25T23:47:50+05:30",
+    "delivered_at": "2026-10-29T23:47:50+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL3742061766"
+  },
+  {
+    "order_id": "LC-1159",
+    "customer_name": "Aditya Chatterjee",
+    "email": "aditya.chatterjee78@example.com",
+    "phone": "+91 9522907777",
+    "items": [
+      {
+        "sku": "BN-009",
+        "qty": 1,
+        "price_inr": 799
+      },
+      {
+        "sku": "BN-002",
+        "qty": 3,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 2446,
+    "status": "delivered",
+    "ordered_at": "2026-10-25T17:38:39+05:30",
+    "shipped_at": "2026-10-26T21:38:39+05:30",
+    "delivered_at": "2026-10-28T22:38:39+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL5126294653"
+  },
+  {
+    "order_id": "LC-1160",
+    "customer_name": "Deepak Patel",
+    "email": "deepak.patel57@example.com",
+    "phone": "+91 9354212080",
+    "items": [
+      {
+        "sku": "BN-010",
+        "qty": 1,
+        "price_inr": 749
+      },
+      {
+        "sku": "BR-009",
+        "qty": 2,
+        "price_inr": 1399
+      },
+      {
+        "sku": "BR-002",
+        "qty": 1,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 5346,
+    "status": "delivered",
+    "ordered_at": "2026-10-26T12:59:35+05:30",
+    "shipped_at": "2026-10-26T18:59:35+05:30",
+    "delivered_at": "2026-10-30T21:59:35+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL5471111257"
+  },
+  {
+    "order_id": "LC-1161",
+    "customer_name": "Venkat Bose",
+    "email": "venkat.bose41@example.com",
+    "phone": "+91 9970294009",
+    "items": [
+      {
+        "sku": "BR-006",
+        "qty": 1,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 1199,
+    "status": "delivered",
+    "ordered_at": "2026-10-26T23:02:20+05:30",
+    "shipped_at": "2026-10-27T08:02:20+05:30",
+    "delivered_at": "2026-10-30T09:02:20+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT67074401"
+  },
+  {
+    "order_id": "LC-1162",
+    "customer_name": "Varun Naidu",
+    "email": "varun.naidu97@example.com",
+    "phone": "+91 9164872879",
+    "items": [
+      {
+        "sku": "AC-007",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 1299,
+    "status": "cancelled",
+    "ordered_at": "2026-10-27T13:32:01+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1163",
+    "customer_name": "Aarav Reddy",
+    "email": "aarav.reddy9@example.com",
+    "phone": "+91 9837102393",
+    "items": [
+      {
+        "sku": "AC-001",
+        "qty": 1,
+        "price_inr": 1499
+      },
+      {
+        "sku": "BR-002",
+        "qty": 2,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 5097,
+    "status": "delivered",
+    "ordered_at": "2026-10-27T20:07:38+05:30",
+    "shipped_at": "2026-10-28T11:07:38+05:30",
+    "delivered_at": "2026-11-02T11:07:38+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT52954153"
+  },
+  {
+    "order_id": "LC-1164",
+    "customer_name": "Karthik Sharma",
+    "email": "karthik.sharma82@example.com",
+    "phone": "+91 9193258275",
+    "items": [
+      {
+        "sku": "GR-008",
+        "qty": 2,
+        "price_inr": 10499
+      },
+      {
+        "sku": "GR-007",
+        "qty": 2,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 24996,
+    "status": "returned",
+    "ordered_at": "2026-10-27T23:48:31+05:30",
+    "shipped_at": "2026-10-28T12:48:31+05:30",
+    "delivered_at": "2026-11-01T19:48:31+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD660394060"
+  },
+  {
+    "order_id": "LC-1165",
+    "customer_name": "Imran Das",
+    "email": "imran.das87@example.com",
+    "phone": "+91 9503516108",
+    "items": [
+      {
+        "sku": "AC-011",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 1499,
+    "status": "delivered",
+    "ordered_at": "2026-10-28T06:26:49+05:30",
+    "shipped_at": "2026-10-29T02:26:49+05:30",
+    "delivered_at": "2026-11-04T05:26:49+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT94256776"
+  },
+  {
+    "order_id": "LC-1166",
+    "customer_name": "Deepak Naidu",
+    "email": "deepak.naidu97@example.com",
+    "phone": "+91 9026449541",
+    "items": [
+      {
+        "sku": "AC-006",
+        "qty": 2,
+        "price_inr": 599
+      },
+      {
+        "sku": "BN-010",
+        "qty": 3,
+        "price_inr": 749
+      }
+    ],
+    "total_inr": 3445,
+    "status": "delivered",
+    "ordered_at": "2026-10-28T09:31:32+05:30",
+    "shipped_at": "2026-10-29T15:31:32+05:30",
+    "delivered_at": "2026-10-31T16:31:32+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL8560522527"
+  },
+  {
+    "order_id": "LC-1167",
+    "customer_name": "Varun Naidu",
+    "email": "varun.naidu64@example.com",
+    "phone": "+91 9379112352",
+    "items": [
+      {
+        "sku": "GR-001",
+        "qty": 1,
+        "price_inr": 2499
+      },
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      }
+    ],
+    "total_inr": 9998,
+    "status": "delivered",
+    "ordered_at": "2026-10-30T11:19:21+05:30",
+    "shipped_at": "2026-10-30T17:19:21+05:30",
+    "delivered_at": "2026-11-02T20:19:21+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD328326697"
+  },
+  {
+    "order_id": "LC-1168",
+    "customer_name": "Arjun Khan",
+    "email": "arjun.khan80@example.com",
+    "phone": "+91 9375678224",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 2,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 1098,
+    "status": "delivered",
+    "ordered_at": "2026-10-30T12:13:07+05:30",
+    "shipped_at": "2026-10-31T05:13:07+05:30",
+    "delivered_at": "2026-11-04T09:13:07+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT94915869"
+  },
+  {
+    "order_id": "LC-1169",
+    "customer_name": "Venkat Khan",
+    "email": "venkat.khan55@example.com",
+    "phone": "+91 9164471532",
+    "items": [
+      {
+        "sku": "GR-002",
+        "qty": 1,
+        "price_inr": 3999
+      },
+      {
+        "sku": "BN-008",
+        "qty": 3,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 6696,
+    "status": "delivered",
+    "ordered_at": "2026-10-30T14:43:04+05:30",
+    "shipped_at": "2026-10-30T20:43:04+05:30",
+    "delivered_at": "2026-11-01T21:43:04+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD083114042"
+  },
+  {
+    "order_id": "LC-1170",
+    "customer_name": "Rahul Patel",
+    "email": "rahul.patel86@example.com",
+    "phone": "+91 9438615086",
+    "items": [
+      {
+        "sku": "BN-014",
+        "qty": 2,
+        "price_inr": 649
+      },
+      {
+        "sku": "KT-001",
+        "qty": 1,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 3297,
+    "status": "delivered",
+    "ordered_at": "2026-10-30T16:12:49+05:30",
+    "shipped_at": "2026-10-31T06:12:49+05:30",
+    "delivered_at": "2026-11-04T13:12:49+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT60946297"
+  },
+  {
+    "order_id": "LC-1171",
+    "customer_name": "Arjun Singh",
+    "email": "arjun.singh75@example.com",
+    "phone": "+91 9138900125",
+    "items": [
+      {
+        "sku": "GR-008",
+        "qty": 1,
+        "price_inr": 10499
+      }
+    ],
+    "total_inr": 10499,
+    "status": "delivered",
+    "ordered_at": "2026-10-31T03:02:17+05:30",
+    "shipped_at": "2026-11-01T04:02:17+05:30",
+    "delivered_at": "2026-11-07T10:02:17+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT54079211"
+  },
+  {
+    "order_id": "LC-1172",
+    "customer_name": "Riya Rao",
+    "email": "riya.rao94@example.com",
+    "phone": "+91 9496355565",
+    "items": [
+      {
+        "sku": "BN-013",
+        "qty": 2,
+        "price_inr": 899
+      },
+      {
+        "sku": "BN-011",
+        "qty": 1,
+        "price_inr": 849
+      }
+    ],
+    "total_inr": 2647,
+    "status": "delivered",
+    "ordered_at": "2026-10-31T05:45:49+05:30",
+    "shipped_at": "2026-11-01T07:45:49+05:30",
+    "delivered_at": "2026-11-03T15:45:49+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL6299570211"
+  },
+  {
+    "order_id": "LC-1173",
+    "customer_name": "Riya Banerjee",
+    "email": "riya.banerjee64@example.com",
+    "phone": "+91 9553130899",
+    "items": [
+      {
+        "sku": "KT-002",
+        "qty": 1,
+        "price_inr": 4499
+      },
+      {
+        "sku": "AC-004",
+        "qty": 1,
+        "price_inr": 249
+      }
+    ],
+    "total_inr": 4748,
+    "status": "delivered",
+    "ordered_at": "2026-10-31T07:26:10+05:30",
+    "shipped_at": "2026-11-01T13:26:10+05:30",
+    "delivered_at": "2026-11-05T18:26:10+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL8692524573"
+  },
+  {
+    "order_id": "LC-1174",
+    "customer_name": "Sneha Das",
+    "email": "sneha.das35@example.com",
+    "phone": "+91 9134016405",
+    "items": [
+      {
+        "sku": "GR-006",
+        "qty": 1,
+        "price_inr": 12999
+      },
+      {
+        "sku": "BR-002",
+        "qty": 1,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 14798,
+    "status": "delivered",
+    "ordered_at": "2026-10-31T09:11:12+05:30",
+    "shipped_at": "2026-10-31T20:11:12+05:30",
+    "delivered_at": "2026-11-03T02:11:12+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD596998138"
+  },
+  {
+    "order_id": "LC-1175",
+    "customer_name": "Vivaan Iyer",
+    "email": "vivaan.iyer84@example.com",
+    "phone": "+91 9540554763",
+    "items": [
+      {
+        "sku": "BN-004",
+        "qty": 3,
+        "price_inr": 599
+      }
+    ],
+    "total_inr": 1797,
+    "status": "delivered",
+    "ordered_at": "2026-11-01T21:01:58+05:30",
+    "shipped_at": "2026-11-02T13:01:58+05:30",
+    "delivered_at": "2026-11-08T21:01:58+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD540950259"
+  },
+  {
+    "order_id": "LC-1176",
+    "customer_name": "Rahul Joshi",
+    "email": "rahul.joshi51@example.com",
+    "phone": "+91 9710421905",
+    "items": [
+      {
+        "sku": "BN-012",
+        "qty": 3,
+        "price_inr": 1799
+      },
+      {
+        "sku": "BN-013",
+        "qty": 3,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 8094,
+    "status": "delivered",
+    "ordered_at": "2026-11-02T11:09:52+05:30",
+    "shipped_at": "2026-11-02T22:09:52+05:30",
+    "delivered_at": "2026-11-06T23:09:52+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT05557423"
+  },
+  {
+    "order_id": "LC-1177",
+    "customer_name": "Zoya Gupta",
+    "email": "zoya.gupta91@example.com",
+    "phone": "+91 9216526860",
+    "items": [
+      {
+        "sku": "GR-008",
+        "qty": 1,
+        "price_inr": 10499
+      },
+      {
+        "sku": "BN-007",
+        "qty": 1,
+        "price_inr": 519
+      }
+    ],
+    "total_inr": 11018,
+    "status": "delivered",
+    "ordered_at": "2026-11-02T14:19:32+05:30",
+    "shipped_at": "2026-11-03T11:19:32+05:30",
+    "delivered_at": "2026-11-07T19:19:32+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL1457760973"
+  },
+  {
+    "order_id": "LC-1178",
+    "customer_name": "Diya Patel",
+    "email": "diya.patel28@example.com",
+    "phone": "+91 9489927895",
+    "items": [
+      {
+        "sku": "GR-004",
+        "qty": 1,
+        "price_inr": 8999
+      },
+      {
+        "sku": "BR-002",
+        "qty": 2,
+        "price_inr": 1799
+      },
+      {
+        "sku": "KT-001",
+        "qty": 1,
+        "price_inr": 1999
+      }
+    ],
+    "total_inr": 14596,
+    "status": "delivered",
+    "ordered_at": "2026-11-02T14:25:46+05:30",
+    "shipped_at": "2026-11-03T04:25:46+05:30",
+    "delivered_at": "2026-11-07T05:25:46+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT34540743"
+  },
+  {
+    "order_id": "LC-1179",
+    "customer_name": "Zoya Iyer",
+    "email": "zoya.iyer4@example.com",
+    "phone": "+91 9034710725",
+    "items": [
+      {
+        "sku": "AC-009",
+        "qty": 1,
+        "price_inr": 999
+      }
+    ],
+    "total_inr": 999,
+    "status": "delivered",
+    "ordered_at": "2026-11-02T22:51:24+05:30",
+    "shipped_at": "2026-11-03T08:51:24+05:30",
+    "delivered_at": "2026-11-05T08:51:24+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9799805736"
+  },
+  {
+    "order_id": "LC-1180",
+    "customer_name": "Zoya Sharma",
+    "email": "zoya.sharma82@example.com",
+    "phone": "+91 9375406171",
+    "items": [
+      {
+        "sku": "AC-011",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 1499,
+    "status": "delivered",
+    "ordered_at": "2026-11-02T22:57:18+05:30",
+    "shipped_at": "2026-11-03T05:57:18+05:30",
+    "delivered_at": "2026-11-05T11:57:18+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD197321394"
+  },
+  {
+    "order_id": "LC-1181",
+    "customer_name": "Riya Pillai",
+    "email": "riya.pillai11@example.com",
+    "phone": "+91 9818722265",
+    "items": [
+      {
+        "sku": "AC-012",
+        "qty": 2,
+        "price_inr": 699
+      }
+    ],
+    "total_inr": 1398,
+    "status": "cancelled",
+    "ordered_at": "2026-11-03T07:30:09+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1182",
+    "customer_name": "Varun Mehta",
+    "email": "varun.mehta16@example.com",
+    "phone": "+91 9434613096",
+    "items": [
+      {
+        "sku": "AC-003",
+        "qty": 1,
+        "price_inr": 349
+      },
+      {
+        "sku": "AC-011",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 1848,
+    "status": "shipped",
+    "ordered_at": "2026-11-03T13:20:12+05:30",
+    "shipped_at": "2026-11-04T15:20:12+05:30",
+    "delivered_at": null,
+    "carrier": "Delhivery",
+    "tracking": "DL5569436589"
+  },
+  {
+    "order_id": "LC-1183",
+    "customer_name": "Siddharth Pillai",
+    "email": "siddharth.pillai57@example.com",
+    "phone": "+91 9595860704",
+    "items": [
+      {
+        "sku": "BN-008",
+        "qty": 3,
+        "price_inr": 899
+      }
+    ],
+    "total_inr": 2697,
+    "status": "delivered",
+    "ordered_at": "2026-11-03T18:13:37+05:30",
+    "shipped_at": "2026-11-04T14:13:37+05:30",
+    "delivered_at": "2026-11-06T14:13:37+05:30",
+    "carrier": "DTDC",
+    "tracking": "DT91729617"
+  },
+  {
+    "order_id": "LC-1184",
+    "customer_name": "Varun Bose",
+    "email": "varun.bose80@example.com",
+    "phone": "+91 9540171095",
+    "items": [
+      {
+        "sku": "AC-011",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 1499,
+    "status": "shipped",
+    "ordered_at": "2026-11-03T23:24:16+05:30",
+    "shipped_at": "2026-11-04T23:24:16+05:30",
+    "delivered_at": null,
+    "carrier": "BlueDart",
+    "tracking": "BD835225265"
+  },
+  {
+    "order_id": "LC-1185",
+    "customer_name": "Venkat Gupta",
+    "email": "venkat.gupta24@example.com",
+    "phone": "+91 9988347220",
+    "items": [
+      {
+        "sku": "KT-003",
+        "qty": 1,
+        "price_inr": 5999
+      },
+      {
+        "sku": "AC-001",
+        "qty": 1,
+        "price_inr": 1499
+      },
+      {
+        "sku": "GR-008",
+        "qty": 1,
+        "price_inr": 10499
+      }
+    ],
+    "total_inr": 17997,
+    "status": "delivered",
+    "ordered_at": "2026-11-04T23:58:51+05:30",
+    "shipped_at": "2026-11-06T04:58:51+05:30",
+    "delivered_at": "2026-11-08T04:58:51+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL9798043397"
+  },
+  {
+    "order_id": "LC-1186",
+    "customer_name": "Harini Mehta",
+    "email": "harini.mehta52@example.com",
+    "phone": "+91 9719001672",
+    "items": [
+      {
+        "sku": "BR-002",
+        "qty": 1,
+        "price_inr": 1799
+      },
+      {
+        "sku": "BN-009",
+        "qty": 3,
+        "price_inr": 799
+      }
+    ],
+    "total_inr": 4196,
+    "status": "delivered",
+    "ordered_at": "2026-11-05T02:02:14+05:30",
+    "shipped_at": "2026-11-06T07:02:14+05:30",
+    "delivered_at": "2026-11-08T14:02:14+05:30",
+    "carrier": "BlueDart",
+    "tracking": "BD866346240"
+  },
+  {
+    "order_id": "LC-1187",
+    "customer_name": "Aditya Bose",
+    "email": "aditya.bose72@example.com",
+    "phone": "+91 9540485091",
+    "items": [
+      {
+        "sku": "AC-011",
+        "qty": 1,
+        "price_inr": 1499
+      },
+      {
+        "sku": "BR-003",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 2998,
+    "status": "shipped",
+    "ordered_at": "2026-11-05T08:41:32+05:30",
+    "shipped_at": "2026-11-05T20:41:32+05:30",
+    "delivered_at": null,
+    "carrier": "DTDC",
+    "tracking": "DT65118580"
+  },
+  {
+    "order_id": "LC-1188",
+    "customer_name": "Varun Kulkarni",
+    "email": "varun.kulkarni99@example.com",
+    "phone": "+91 9426930102",
+    "items": [
+      {
+        "sku": "AC-004",
+        "qty": 1,
+        "price_inr": 249
+      },
+      {
+        "sku": "AC-010",
+        "qty": 1,
+        "price_inr": 1199
+      }
+    ],
+    "total_inr": 1448,
+    "status": "shipped",
+    "ordered_at": "2026-11-05T13:28:39+05:30",
+    "shipped_at": "2026-11-06T19:28:39+05:30",
+    "delivered_at": null,
+    "carrier": "DTDC",
+    "tracking": "DT08620234"
+  },
+  {
+    "order_id": "LC-1189",
+    "customer_name": "Pooja Chatterjee",
+    "email": "pooja.chatterjee99@example.com",
+    "phone": "+91 9301930407",
+    "items": [
+      {
+        "sku": "KT-004",
+        "qty": 1,
+        "price_inr": 7499
+      },
+      {
+        "sku": "BN-015",
+        "qty": 3,
+        "price_inr": 539
+      }
+    ],
+    "total_inr": 9116,
+    "status": "cancelled",
+    "ordered_at": "2026-11-05T13:52:08+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1190",
+    "customer_name": "Harini Rao",
+    "email": "harini.rao61@example.com",
+    "phone": "+91 9876750486",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 1,
+        "price_inr": 549
+      }
+    ],
+    "total_inr": 549,
+    "status": "shipped",
+    "ordered_at": "2026-11-05T16:52:04+05:30",
+    "shipped_at": "2026-11-05T23:52:04+05:30",
+    "delivered_at": null,
+    "carrier": "Delhivery",
+    "tracking": "DL3959773386"
+  },
+  {
+    "order_id": "LC-1191",
+    "customer_name": "Ananya Patel",
+    "email": "ananya.patel72@example.com",
+    "phone": "+91 9212969286",
+    "items": [
+      {
+        "sku": "BR-001",
+        "qty": 2,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 2598,
+    "status": "delivered",
+    "ordered_at": "2026-11-05T22:02:40+05:30",
+    "shipped_at": "2026-11-06T13:02:40+05:30",
+    "delivered_at": "2026-11-08T13:02:40+05:30",
+    "carrier": "Delhivery",
+    "tracking": "DL2854375149"
+  },
+  {
+    "order_id": "LC-1192",
+    "customer_name": "Imran Mehta",
+    "email": "imran.mehta60@example.com",
+    "phone": "+91 9361359289",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 2,
+        "price_inr": 6499
+      },
+      {
+        "sku": "BN-012",
+        "qty": 1,
+        "price_inr": 1799
+      }
+    ],
+    "total_inr": 14797,
+    "status": "shipped",
+    "ordered_at": "2026-11-06T05:14:30+05:30",
+    "shipped_at": "2026-11-06T14:14:30+05:30",
+    "delivered_at": null,
+    "carrier": "BlueDart",
+    "tracking": "BD225032708"
+  },
+  {
+    "order_id": "LC-1193",
+    "customer_name": "Imran Nair",
+    "email": "imran.nair92@example.com",
+    "phone": "+91 9108324957",
+    "items": [
+      {
+        "sku": "BR-006",
+        "qty": 2,
+        "price_inr": 1199
+      },
+      {
+        "sku": "BR-009",
+        "qty": 1,
+        "price_inr": 1399
+      }
+    ],
+    "total_inr": 3797,
+    "status": "shipped",
+    "ordered_at": "2026-11-06T08:46:19+05:30",
+    "shipped_at": "2026-11-07T00:46:19+05:30",
+    "delivered_at": null,
+    "carrier": "DTDC",
+    "tracking": "DT03701490"
+  },
+  {
+    "order_id": "LC-1194",
+    "customer_name": "Ananya Joshi",
+    "email": "ananya.joshi57@example.com",
+    "phone": "+91 9310648740",
+    "items": [
+      {
+        "sku": "BN-005",
+        "qty": 3,
+        "price_inr": 549
+      },
+      {
+        "sku": "BN-001",
+        "qty": 3,
+        "price_inr": 499
+      }
+    ],
+    "total_inr": 3144,
+    "status": "shipped",
+    "ordered_at": "2026-11-07T19:47:24+05:30",
+    "shipped_at": "2026-11-08T14:47:24+05:30",
+    "delivered_at": null,
+    "carrier": "Delhivery",
+    "tracking": "DL6040087933"
+  },
+  {
+    "order_id": "LC-1195",
+    "customer_name": "Karthik Sharma",
+    "email": "karthik.sharma19@example.com",
+    "phone": "+91 9280707462",
+    "items": [
+      {
+        "sku": "KT-002",
+        "qty": 1,
+        "price_inr": 4499
+      },
+      {
+        "sku": "BR-008",
+        "qty": 1,
+        "price_inr": 6999
+      },
+      {
+        "sku": "BN-011",
+        "qty": 1,
+        "price_inr": 849
+      }
+    ],
+    "total_inr": 12347,
+    "status": "placed",
+    "ordered_at": "2026-11-08T13:24:00+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1196",
+    "customer_name": "Vivaan Naidu",
+    "email": "vivaan.naidu76@example.com",
+    "phone": "+91 9498575749",
+    "items": [
+      {
+        "sku": "BN-012",
+        "qty": 3,
+        "price_inr": 1799
+      },
+      {
+        "sku": "BR-007",
+        "qty": 2,
+        "price_inr": 1599
+      }
+    ],
+    "total_inr": 8595,
+    "status": "cancelled",
+    "ordered_at": "2026-11-08T13:38:00+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1197",
+    "customer_name": "Vivaan Pillai",
+    "email": "vivaan.pillai63@example.com",
+    "phone": "+91 9954182012",
+    "items": [
+      {
+        "sku": "GR-008",
+        "qty": 1,
+        "price_inr": 10499
+      },
+      {
+        "sku": "BN-009",
+        "qty": 2,
+        "price_inr": 799
+      },
+      {
+        "sku": "AC-001",
+        "qty": 1,
+        "price_inr": 1499
+      }
+    ],
+    "total_inr": 13596,
+    "status": "placed",
+    "ordered_at": "2026-11-08T13:45:00+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1198",
+    "customer_name": "Meera Banerjee",
+    "email": "meera.banerjee88@example.com",
+    "phone": "+91 9235167799",
+    "items": [
+      {
+        "sku": "BN-001",
+        "qty": 2,
+        "price_inr": 499
+      }
+    ],
+    "total_inr": 998,
+    "status": "placed",
+    "ordered_at": "2026-11-08T14:54:00+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1199",
+    "customer_name": "Kavya Naidu",
+    "email": "kavya.naidu27@example.com",
+    "phone": "+91 9154623746",
+    "items": [
+      {
+        "sku": "BR-005",
+        "qty": 2,
+        "price_inr": 2499
+      }
+    ],
+    "total_inr": 4998,
+    "status": "placed",
+    "ordered_at": "2026-11-08T14:55:00+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  },
+  {
+    "order_id": "LC-1200",
+    "customer_name": "Meera Menon",
+    "email": "meera.menon30@example.com",
+    "phone": "+91 9646907048",
+    "items": [
+      {
+        "sku": "GR-005",
+        "qty": 1,
+        "price_inr": 6499
+      },
+      {
+        "sku": "AC-005",
+        "qty": 1,
+        "price_inr": 1299
+      }
+    ],
+    "total_inr": 7798,
+    "status": "placed",
+    "ordered_at": "2026-11-08T15:21:00+05:30",
+    "shipped_at": null,
+    "delivered_at": null,
+    "carrier": null,
+    "tracking": null
+  }
+]

@@ -1,0 +1,36 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: larkfield
+      POSTGRES_PASSWORD: larkfield
+      POSTGRES_DB: larkfield
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U larkfield -d larkfield"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://larkfield:larkfield@db:5432/larkfield
+      OLLAMA_URL: http://host.docker.internal:11434
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+
+volumes:
+  pgdata:

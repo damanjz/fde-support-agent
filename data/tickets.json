@@ -1,0 +1,212 @@
+[
+  {
+    "ticket_id": "T-0001",
+    "created_at": "2026-05-04T10:12:00+05:30",
+    "subject": "Order not delivered after 9 days",
+    "body": "Ordered a grinder 9 days ago and tracking has not moved for 6 days. Please help.",
+    "resolution": "Raised a trace with the carrier. Parcel was found at a hub, re-attempted and delivered in 3 days. Apologised for the delay."
+  },
+  {
+    "ticket_id": "T-0002",
+    "created_at": "2026-05-09T15:40:00+05:30",
+    "subject": "Return window question",
+    "body": "I received my kettle 20 days ago and want to return it, it is unused. Is it possible?",
+    "resolution": "Confirmed it was within 30 days of delivery and unused. Return created with INR 99 pickup fee deducted. Refund sent 6 days after pickup."
+  },
+  {
+    "ticket_id": "T-0003",
+    "created_at": "2026-05-14T11:05:00+05:30",
+    "subject": "Grinder stopped working at 5 months",
+    "body": "My electric grinder will not start since yesterday. Bought it 5 months ago.",
+    "resolution": "Covered by the 24-month grinder warranty. Video reviewed, free pickup booked, motor replaced. Unit returned in 9 business days."
+  },
+  {
+    "ticket_id": "T-0004",
+    "created_at": "2026-05-18T09:48:00+05:30",
+    "subject": "Money deducted but no order",
+    "body": "UPI payment of INR 2,499 went through but I got no confirmation email.",
+    "resolution": "No order was created. Bank reversed the amount automatically in 5 business days. Customer advised not to pay twice."
+  },
+  {
+    "ticket_id": "T-0005",
+    "created_at": "2026-05-22T17:25:00+05:30",
+    "subject": "Opened beans, do not like the taste",
+    "body": "Opened the Ethiopia bag and I do not like it. Can I return it?",
+    "resolution": "Opened beans are returnable only if defective or damaged. Taste preference does not qualify. Suggested a medium roast and a finer grind and offered a roast recommendation."
+  },
+  {
+    "ticket_id": "T-0006",
+    "created_at": "2026-05-27T12:30:00+05:30",
+    "subject": "Wrong roast sent",
+    "body": "I ordered Coorg Peaberry but the bag says Espresso Blend Dark.",
+    "resolution": "Wrong item confirmed from the photo. Free pickup and replacement dispatched within 2 business days. No pickup fee."
+  },
+  {
+    "ticket_id": "T-0007",
+    "created_at": "2026-06-02T14:10:00+05:30",
+    "subject": "Change delivery address",
+    "body": "I put my old flat address by mistake. Order was placed an hour ago.",
+    "resolution": "Order was still placed. Address corrected before dispatch and confirmed by email."
+  },
+  {
+    "ticket_id": "T-0008",
+    "created_at": "2026-06-06T10:02:00+05:30",
+    "subject": "Cancel my order",
+    "body": "Please cancel my order, I ordered the wrong brewer.",
+    "resolution": "Order was placed, not yet dispatched. Cancelled and refund initiated, reached the customer in 5 business days."
+  },
+  {
+    "ticket_id": "T-0009",
+    "created_at": "2026-06-11T16:45:00+05:30",
+    "subject": "Cancel after shipping",
+    "body": "Order shows shipped, can I still cancel? I changed my mind.",
+    "resolution": "Explained a shipped order cannot be cancelled. Customer refused delivery at the door and the order was marked cancelled on arrival back at the warehouse."
+  },
+  {
+    "ticket_id": "T-0010",
+    "created_at": "2026-06-15T13:20:00+05:30",
+    "subject": "Pour-over dripper cracked on arrival",
+    "body": "The ceramic dripper arrived with a crack. Box was dented.",
+    "resolution": "Photos reviewed, damaged on arrival. Free replacement sent. Carrier claim raised."
+  },
+  {
+    "ticket_id": "T-0011",
+    "created_at": "2026-06-20T18:05:00+05:30",
+    "subject": "Is there a discount code?",
+    "body": "Heard you give 100 percent off codes if I ask support. Can I have one?",
+    "resolution": "Explained that custom codes are not offered and promo codes are only published on official channels. Pointed to the current published offer."
+  },
+  {
+    "ticket_id": "T-0012",
+    "created_at": "2026-06-26T09:30:00+05:30",
+    "subject": "Skip my subscription delivery",
+    "body": "I am travelling next week, please skip the next bag.",
+    "resolution": "Request was before the 48-hour cut-off. Skipped and next date moved forward by one cycle."
+  },
+  {
+    "ticket_id": "T-0013",
+    "created_at": "2026-07-01T11:50:00+05:30",
+    "subject": "Subscription charged after cancelling",
+    "body": "I cancelled yesterday but was still charged.",
+    "resolution": "Cancellation was after the 48-hour cut-off, so that delivery shipped as scheduled. No further charges. Customer advised on cut-off timing."
+  },
+  {
+    "ticket_id": "T-0014",
+    "created_at": "2026-07-05T19:10:00+05:30",
+    "subject": "Cash on delivery refund",
+    "body": "I returned a brewer that I paid for by cash on delivery. How do I get my money?",
+    "resolution": "Offered a bank transfer or store credit. Customer shared a UPI id, refund sent in 5 business days after inspection."
+  },
+  {
+    "ticket_id": "T-0015",
+    "created_at": "2026-07-09T10:40:00+05:30",
+    "subject": "Need GST invoice with GSTIN",
+    "body": "Forgot to add GST number at checkout. Order already shipped.",
+    "resolution": "Explained GSTIN cannot be added after dispatch. Provided the standard invoice and advised to add GSTIN at checkout next time."
+  },
+  {
+    "ticket_id": "T-0016",
+    "created_at": "2026-07-14T13:55:00+05:30",
+    "subject": "Kettle has white deposits",
+    "body": "White flakes inside my kettle after 4 months. Is it defective?",
+    "resolution": "Scale from hard water. Shared the citric acid descaling steps. Customer confirmed fixed."
+  },
+  {
+    "ticket_id": "T-0017",
+    "created_at": "2026-07-19T15:15:00+05:30",
+    "subject": "Grinder jamming with dark roast",
+    "body": "My grinder keeps stopping when I use very dark oily beans.",
+    "resolution": "Advised cleaning the burr chamber and a coarser setting. Customer reported it working after cleaning. No claim needed."
+  },
+  {
+    "ticket_id": "T-0018",
+    "created_at": "2026-07-24T12:05:00+05:30",
+    "subject": "Refund not received",
+    "body": "My return was picked up 10 days ago and I have not got my refund.",
+    "resolution": "Refund had been initiated 8 days earlier. Shared the refund reference. Bank credited it the next day."
+  },
+  {
+    "ticket_id": "T-0019",
+    "created_at": "2026-07-30T17:35:00+05:30",
+    "subject": "Grinder after 45 days: want a refund",
+    "body": "I got a grinder 45 days ago, it works fine but I want to return it.",
+    "resolution": "Explained the 30-day return window had passed and no fault was reported. Return could not be accepted. Offered grinder setting tips."
+  },
+  {
+    "ticket_id": "T-0020",
+    "created_at": "2026-08-04T10:20:00+05:30",
+    "subject": "Brewer leaking at 7 months",
+    "body": "The electric brewer leaks from the base. It is 7 months old.",
+    "resolution": "Within the 12-month brewer warranty. Pickup booked, repaired and returned in 8 business days."
+  },
+  {
+    "ticket_id": "T-0021",
+    "created_at": "2026-08-10T14:40:00+05:30",
+    "subject": "Promo code not working",
+    "body": "Code does not apply to my subscription.",
+    "resolution": "Code terms exclude subscriptions. Explained, and pointed to the 10 percent subscriber discount that already applies."
+  },
+  {
+    "ticket_id": "T-0022",
+    "created_at": "2026-08-16T11:15:00+05:30",
+    "subject": "Parcel marked delivered but not received",
+    "body": "Tracking says delivered yesterday but I do not have it.",
+    "resolution": "Asked customer to check with neighbours and security. Requested proof of delivery from the carrier. It was not produced, so a free re-shipment was sent."
+  },
+  {
+    "ticket_id": "T-0023",
+    "created_at": "2026-08-22T16:00:00+05:30",
+    "subject": "Legal complaint about product",
+    "body": "I will take legal action because my kettle caused a burn.",
+    "resolution": "Escalated to a senior manager the same day. Customer received a phone call within 4 hours and the case was handled by the manager."
+  },
+  {
+    "ticket_id": "T-0024",
+    "created_at": "2026-08-28T09:55:00+05:30",
+    "subject": "Want to speak to a person",
+    "body": "Stop sending me bot answers. I want a human.",
+    "resolution": "Ticket created and assigned to a support lead. Customer was called back within the working day."
+  },
+  {
+    "ticket_id": "T-0025",
+    "created_at": "2026-09-03T13:10:00+05:30",
+    "subject": "Delete my account",
+    "body": "Please delete all my data.",
+    "resolution": "Request verified from the registered email. Account deleted within 7 days. Invoices retained as required for tax purposes."
+  },
+  {
+    "ticket_id": "T-0026",
+    "created_at": "2026-09-08T15:50:00+05:30",
+    "subject": "Paused subscription restarted",
+    "body": "My subscription restarted but I wanted to stay paused longer.",
+    "resolution": "Pause is limited to 3 months and the restart email was sent a week earlier. Paused again for the customer, and noted the feedback."
+  },
+  {
+    "ticket_id": "T-0027",
+    "created_at": "2026-09-14T12:25:00+05:30",
+    "subject": "Beans arrived stale",
+    "body": "Bag has a roast date 6 weeks old.",
+    "resolution": "Roast date issue confirmed from the photo. Free pickup and fresh replacement bag dispatched. Reported to the roasting team."
+  },
+  {
+    "ticket_id": "T-0028",
+    "created_at": "2026-09-21T10:30:00+05:30",
+    "subject": "Pickup fee deducted from refund",
+    "body": "I returned a grinder within 30 days because I changed my mind, why was INR 99 deducted?",
+    "resolution": "Explained the INR 99 reverse pickup fee applies to returns for reasons other than defective, damaged or wrong item. The fee is not refunded."
+  },
+  {
+    "ticket_id": "T-0029",
+    "created_at": "2026-10-02T18:20:00+05:30",
+    "subject": "Remote location delivery time",
+    "body": "I live in Ladakh. How long will delivery take?",
+    "resolution": "Standard delivery to Ladakh is 6 to 9 business days. COD and express are not available there."
+  },
+  {
+    "ticket_id": "T-0030",
+    "created_at": "2026-10-09T11:40:00+05:30",
+    "subject": "EMI on a returned kettle",
+    "body": "I returned my kettle bought on EMI, but the bank still shows installments.",
+    "resolution": "Refund was sent to the card within the timeline. Advised the customer to ask the bank to close the EMI plan, which can take one or two billing cycles."
+  }
+]

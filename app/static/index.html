@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Larkfield Coffee Co. support (demo)</title>
+<style>
+  :root {
+    --bg: #f6f4f0;
+    --surface: #ffffff;
+    --ink: #1f1b16;
+    --muted: #7a7266;
+    --line: #e4dfd6;
+    --accent: #5a3b22;
+    --accent-ink: #ffffff;
+    --user: #ece6db;
+    --chip: #efe9de;
+    --warn: #8a5a12;
+    --warn-bg: #fbf3e2;
+    --err: #a3362b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16130f;
+      --surface: #1e1a15;
+      --ink: #ece6db;
+      --muted: #9a9183;
+      --line: #342e26;
+      --accent: #d6b48c;
+      --accent-ink: #1a140d;
+      --user: #2a241c;
+      --chip: #2c261e;
+      --warn: #e0b45c;
+      --warn-bg: #2a2214;
+      --err: #e07a6e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    background: var(--surface);
+  }
+  header h1 { margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.01em; }
+  header p { margin: 2px 0 0; font-size: 12px; color: var(--muted); }
+  main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .msg { display: flex; flex-direction: column; margin-bottom: 18px; max-width: 100%; }
+  .msg.user { align-items: flex-end; }
+  .bubble {
+    padding: 10px 14px;
+    border-radius: 14px;
+    max-width: 88%;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .msg.user .bubble { background: var(--user); border-color: transparent; }
+  .msg.error .bubble { color: var(--err); }
+  .meta { font-size: 11.5px; color: var(--muted); margin-top: 5px; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .chip {
+    font-size: 11.5px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--chip);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    font-variant-numeric: tabular-nums;
+  }
+  details.actions { margin-top: 6px; font-size: 12px; color: var(--muted); max-width: 88%; }
+  details.actions summary { cursor: pointer; }
+  details.actions pre {
+    margin: 6px 0 0;
+    padding: 8px 10px;
+    background: var(--chip);
+    border-radius: 8px;
+    overflow-x: auto;
+    font: 11.5px/1.45 ui-monospace, "Cascadia Mono", Consolas, monospace;
+    color: var(--ink);
+  }
+  .escalated { color: var(--warn); }
+  .confirm {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    background: var(--warn-bg);
+    border-radius: 10px;
+    max-width: 88%;
+    font-size: 13px;
+  }
+  .confirm code { font: 12px ui-monospace, "Cascadia Mono", Consolas, monospace; overflow-wrap: anywhere; }
+  .confirm .row { display: flex; gap: 8px; margin-top: 8px; }
+  button {
+    font: inherit;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  button:disabled { opacity: 0.5; cursor: default; }
+  button:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  form {
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    padding: 12px 16px;
+  }
+  .compose { max-width: 720px; margin: 0 auto; display: flex; gap: 8px; align-items: flex-end; }
+  textarea {
+    flex: 1;
+    resize: none;
+    font: inherit;
+    padding: 9px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    color: var(--ink);
+    max-height: 120px;
+  }
+  .empty { color: var(--muted); text-align: center; margin-top: 12vh; font-size: 14px; }
+  .typing { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Larkfield Coffee Co. support (demo, simulated company)</h1>
+  <p>Answers come from the help centre and live order tools. Actions need your confirmation.</p>
+</header>
+<main id="log" aria-live="polite">
+  <div class="empty" id="empty">Ask about shipping, returns, warranty, or an order such as LC-1042.</div>
+</main>
+<form id="form">
+  <div class="compose">
+    <textarea id="input" rows="1" placeholder="Type your question" aria-label="Message"></textarea>
+    <button class="primary" id="send" type="submit">Send</button>
+  </div>
+</form>
+<script>
+(function () {
+  var sessionId = "web-" + Math.random().toString(36).slice(2, 10);
+  var log = document.getElementById("log");
+  var form = document.getElementById("form");
+  var input = document.getElementById("input");
+  var send = document.getElementById("send");
+  var busy = false;
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text;
+    return n;
+  }
+  function scroll() { log.scrollTop = log.scrollHeight; }
+  function clearEmpty() {
+    var e = document.getElementById("empty");
+    if (e) e.remove();
+  }
+  function userMsg(text) {
+    clearEmpty();
+    var m = el("div", "msg user");
+    m.appendChild(el("div", "bubble", text));
+    log.appendChild(m);
+    scroll();
+  }
+  function setBusy(b) {
+    busy = b;
+    send.disabled = b;
+    Array.prototype.forEach.call(log.querySelectorAll(".confirm button"), function (x) { x.disabled = b; });
+  }
+  function pendingLabel(p) {
+    var name = p.tool || p.name || "action";
+    var args = p.args || p.arguments || {};
+    return name + " " + JSON.stringify(args);
+  }
+
+  function agentMsg(r) {
+    var m = el("div", "msg agent");
+    m.appendChild(el("div", "bubble", r.text || "(no reply)"));
+
+    if (r.citations && r.citations.length) {
+      var chips = el("div", "chips");
+      r.citations.forEach(function (c) { chips.appendChild(el("span", "chip", c)); });
+      m.appendChild(chips);
+    }
+    if (r.tool_calls && r.tool_calls.length) {
+      var d = el("details", "actions");
+      d.appendChild(el("summary", "", "what the agent did (" + r.tool_calls.length + (r.tool_calls.length === 1 ? " step)" : " steps)")));
+      d.appendChild(el("pre", "", r.tool_calls.map(function (t) {
+        return t.name + "(" + JSON.stringify(t.args || {}) + ")\n  -> " + JSON.stringify(t.result);
+      }).join("\n")));
+      m.appendChild(d);
+    }
+    if (r.pending_action) {
+      var box = el("div", "confirm");
+      box.appendChild(el("div", "", "Waiting for your confirmation:"));
+      box.appendChild(el("code", "", pendingLabel(r.pending_action)));
+      var row = el("div", "row");
+      var ok = el("button", "primary", "Confirm");
+      var no = el("button", "", "Cancel");
+      ok.type = no.type = "button";
+      ok.onclick = function () { decide(box, true); };
+      no.onclick = function () { decide(box, false); };
+      row.appendChild(ok);
+      row.appendChild(no);
+      box.appendChild(row);
+      m.appendChild(box);
+    }
+    var meta = el("div", "meta");
+    var u = r.usage || {};
+    if (u.latency_ms !== undefined) meta.appendChild(el("span", "", (u.latency_ms / 1000).toFixed(1) + "s"));
+    if (u.prompt_tokens !== undefined) {
+      meta.appendChild(el("span", "", (u.prompt_tokens + (u.completion_tokens || 0)) + " tokens"));
+    }
+    if (r.escalated) meta.appendChild(el("span", "escalated", "passed to a person"));
+    if (meta.childNodes.length) m.appendChild(meta);
+    log.appendChild(m);
+    scroll();
+  }
+  function errorMsg(text) {
+    var m = el("div", "msg error");
+    m.appendChild(el("div", "bubble", text));
+    log.appendChild(m);
+    scroll();
+  }
+
+  function post(payload) {
+    setBusy(true);
+    var wait = el("div", "msg");
+    wait.appendChild(el("div", "typing", "Working on it..."));
+    log.appendChild(wait);
+    scroll();
+    return fetch("/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.assign({ session_id: sessionId }, payload))
+    }).then(function (res) {
+      if (!res.ok) throw new Error("Server returned " + res.status);
+      return res.json();
+    }).then(agentMsg).catch(function (e) {
+      errorMsg("Could not reach the agent (" + e.message + "). Try again.");
+    }).then(function () {
+      wait.remove();
+      setBusy(false);
+      input.focus();
+    });
+  }
+
+  function decide(box, yes) {
+    if (busy) return;
+    var label = box.querySelector("code").textContent;
+    box.replaceChildren(el("div", "", (yes ? "Confirmed: " : "Cancelled: ") + label));
+    post({ message: yes ? "confirm" : "cancel", confirm: yes });
+  }
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var text = input.value.trim();
+    if (!text || busy) return;
+    input.value = "";
+    input.style.height = "auto";
+    userMsg(text);
+    post({ message: text });
+  });
+  input.addEventListener("keydown", function (ev) {
+    if (ev.key === "Enter" && !ev.shiftKey) {
+      ev.preventDefault();
+      form.requestSubmit();
+    }
+  });
+  input.addEventListener("input", function () {
+    input.style.height = "auto";
+    input.style.height = Math.min(input.scrollHeight, 120) + "px";
+  });
+})();
+</script>
+</body>
+</html>
