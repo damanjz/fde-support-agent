@@ -133,6 +133,7 @@ class _Turn:
     pending: dict | None = None
     waiting: dict | None = None  # an earlier action still awaiting the customer's click
     user_message: str = ""
+    customer_text: str = ""  # every customer message this session, for the records check
     escalated: bool = False
     flags: list[str] = field(default_factory=list)
     prompt_tokens: int = 0
@@ -167,7 +168,7 @@ def _execute(name: str, args: dict, session_id: str, turn: _Turn) -> dict:
     return result
 
 
-def _precheck(name: str, args: dict, session_id: str) -> dict | None:
+def _precheck(name: str, args: dict, session_id: str, customer_text: str = "") -> dict | None:
     """Dry-run a return against the real policy before asking the customer to confirm.
 
     Runs inside a transaction that is always rolled back, so nothing is written. Returns the dry-run
@@ -176,6 +177,12 @@ def _precheck(name: str, args: dict, session_id: str) -> dict | None:
     """
     if name != "start_return":
         return None
+    order_id = str(args.get("order_id") or "").strip().upper()
+    if order_id and customer_text:
+        with db.get_pool().connection() as conn:
+            mismatch = tools.check_records(order_id, customer_text, conn)
+        if mismatch:
+            return mismatch
     with db.get_pool().connection() as conn, conn.transaction(force_rollback=True):
         return tools.execute(name, args, conn, session_id=session_id, commit=False, now=_now())
 
@@ -246,11 +253,21 @@ def _return_stalled(turn: _Turn) -> bool:
     return found and "start_return" not in names and "create_ticket" not in names and not turn.pending
 
 
-def _acted(turn: _Turn) -> bool:
-    """True if this turn proposed or ran a write tool, so action wording in the reply is backed."""
-    return bool(turn.pending or turn.waiting) or any(
-        t["name"] in tools.WRITE_TOOLS and "error" not in t["result"] for t in turn.tool_calls
-    )
+_RETURN_CLAIM_RE = re.compile(r"\b(?:return|refund|pick ?up)", re.IGNORECASE)
+
+
+def _acted(turn: _Turn, reply: str = "") -> bool:
+    """True if this turn proposed or ran a write tool, so action wording in the reply is backed.
+
+    A card still waiting from an earlier turn backs only its own kind of action: a waiting ticket does
+    not back "I can start a return" (replay of the 2026-11-10 live test: the model wrote its own return
+    card while only a ticket was pending).
+    """
+    if turn.pending or any(t["name"] in tools.WRITE_TOOLS and "error" not in t["result"] for t in turn.tool_calls):
+        return True
+    if turn.waiting:
+        return turn.waiting.get("tool") == "start_return" or not _RETURN_CLAIM_RE.search(reply or "")
+    return False
 
 
 def _loop(messages: list[dict], turn: _Turn, session_id: str) -> str:
@@ -263,7 +280,7 @@ def _loop(messages: list[dict], turn: _Turn, session_id: str) -> str:
         last_round = round_no == settings.max_tool_rounds  # force a text answer
         resp = _chat(messages, turn, with_tools=not last_round)
         if not resp.tool_calls or last_round:
-            claim = None if (nudged or last_round or _acted(turn)) else _ACTION_CLAIM_RE.search(resp.content)
+            claim = None if (nudged or last_round or _acted(turn, resp.content)) else _ACTION_CLAIM_RE.search(resp.content)
             stalled = not (nudged or last_round or claim) and _return_stalled(turn)
             if not claim and not stalled:
                 return resp.content
@@ -277,7 +294,7 @@ def _loop(messages: list[dict], turn: _Turn, session_id: str) -> str:
         write_call, preview = None, None
         for call in resp.tool_calls:
             if call.name in tools.WRITE_TOOLS:
-                check = None if write_call else _precheck(call.name, call.args, session_id)
+                check = None if write_call else _precheck(call.name, call.args, session_id, turn.customer_text)
                 if check and "error" in check:  # policy says no: tell the model, don't ask to confirm
                     turn.tool_calls.append({"name": call.name, "args": call.args, "result": check})
                     messages.append(_tool_message(call.name, check))
@@ -313,6 +330,7 @@ def _answer(
         extra = [c for c in _retrieve(f"{previous} {user_message}", mode) or [] if (c.article_id, c.section) not in seen]
         chunks = chunks + extra[:3]
     turn.chunks = chunks or []
+    turn.customer_text = " ".join([*(m["content"] for m in session.history if m["role"] == "user"), user_message])
     messages = _base_messages(session)
     if guardrails.detect_injection(user_message):  # authority claims and rule changes grant nothing
         messages[0] = {**messages[0], "content": messages[0]["content"] + INJECTION_NOTE}
@@ -322,8 +340,28 @@ def _answer(
             "Do not propose the same action again; answer the message. It stays pending unless you propose a "
             "different action. If the customer no longer wants it, tell them to press Cancel."
         )}
+    notes = _records_notes(turn.customer_text)
+    if notes:  # the customer's account and the order disagree: say so every turn, never offer a return
+        messages[0] = {**messages[0], "content": messages[0]["content"] + "\n\n" + notes}
     messages.append({"role": "user", "content": build_user_message(user_message, chunks)})
     return _loop(messages, turn, session_id)
+
+
+_ORDER_ID_RE = re.compile(r"\bLC-\d{4}\b", re.IGNORECASE)
+
+
+def _records_notes(customer_text: str) -> str:
+    """Records check for every order the customer named, as a note for the first system message.
+
+    The tool-level refusal alone came one turn late: the agent offered "I can start a return right now"
+    and only then hit the refusal (replay of the 2026-11-10 live test).
+    """
+    order_ids = list(dict.fromkeys(m.upper() for m in _ORDER_ID_RE.findall(customer_text or "")))[:3]
+    if not order_ids:
+        return ""
+    with db.get_pool().connection() as conn:
+        found = [tools.check_records(oid, customer_text, conn) for oid in order_ids]
+    return "\n".join(f"Records check: {r['error']}" for r in found if r)
 
 
 def _confirmed(

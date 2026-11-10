@@ -254,6 +254,71 @@ _CATEGORY_WORDS = {
 }
 
 
+# What the customer says they have, by catalogue category. Deliberately narrow: generic words ("coffee",
+# "bag", "press" alone) are left out so a vague message never blocks a real return.
+_DESCRIBED = [
+    ("grinder", r"grinders?|burr grinders?"),
+    ("kettle", r"kettles?|gooseneck"),
+    ("brewer", r"brewers?|drippers?|pour[- ]?over|french press|moka(?: pot)?|espresso machine|cold brew jar"),
+    ("beans", (r"beans?|blends?|roasts?|peaberry|decaf|sampler|yirgacheffe|huila|araku|coorg|chikmagalur|malabar|"
+              r"baba budangiri")),
+    ("accessory", (r"scales?|mugs?|filters?|descaler|tamper|frothing jug|milk jug|canister|knock box|thermometer|"
+                  r"cleaning tablets|replacement burrs?|burr set")),
+]
+_DESCRIBED_RE = [(cat, re.compile(rf"\b(?:{pat})\b", re.IGNORECASE)) for cat, pat in _DESCRIBED]
+
+
+def described_categories(text: str) -> dict[str, str]:
+    """Catalogue categories the customer names in their own words, with the word they used."""
+    found = {}
+    for cat, rx in _DESCRIBED_RE:
+        m = rx.search(text or "")
+        if m:
+            found[cat] = m.group(0).lower()
+    return found
+
+
+def records_mismatch(order_id: str, customer_text: str, cur: Any) -> dict | None:
+    """A refusal when the customer describes only items of a kind that is not on the order.
+
+    Live test (2026-11-10): a customer said a kettle arrived on an order of two grinders; the agent
+    rewrote the story and refunded both grinders. Records and the customer disagreeing is a case for a
+    person, not a refund, so the return is refused here in code and the model is told to offer a ticket.
+    Any overlap between what the customer names and what the order holds passes.
+    """
+    named = described_categories(customer_text)
+    if not named:
+        return None
+    cur.execute(
+        "SELECT DISTINCT p.category, p.name FROM order_items oi JOIN products p ON p.sku = oi.sku "
+        "WHERE oi.order_id = %s",
+        (order_id,),
+    )
+    rows = cur.fetchall()
+    if not rows:
+        return None
+    on_order = {r["category"] for r in rows}
+    if set(named) & on_order:
+        return None
+    said = ", ".join(sorted(set(named.values())))
+    holds = ", ".join(sorted({r["name"] for r in rows}))
+    return _err(
+        f"Records mismatch: the customer described {said}, but order {order_id} holds {holds}. "
+        "Do not start a return or promise a refund. Tell the customer politely what the order shows, and "
+        "offer a ticket so a person can check what was ordered and delivered.",
+        suggest="ticket",
+    )
+
+
+def check_records(order_id: str, customer_text: str, conn: Connection) -> dict | None:
+    """records_mismatch on its own read-only cursor; never raises (a failure lets the normal checks run)."""
+    try:
+        with conn.cursor(row_factory=dict_row) as cur:
+            return records_mismatch(order_id, customer_text, cur)
+    except Exception:  # noqa: BLE001 - the policy dry-run still runs after this
+        return None
+
+
 def search_products(args: dict, cur: Any) -> dict:
     """Browse the catalogue by keywords, category and budget. Ranks by keyword matches, then price."""
     query = str(args.get("query") or "").lower()
@@ -263,7 +328,7 @@ def search_products(args: dict, cur: Any) -> dict:
         return _err(f"category must be one of {', '.join(sorted(CATEGORIES))}.")
     if max_price is not None and (not isinstance(max_price, int | float) or max_price <= 0):
         return _err("max_price_inr must be a positive number.")
-    words = [w for w in re.findall(r"[a-z0-9]+", query) if w not in _SEARCH_STOPWORDS]
+    words = [w for w in re.findall(r"[a-z0-9]+", query) if w not in _SEARCH_STOPWORDS and len(w) > 2]  # "no" matched inside "Cappuccino"
     cur.execute("SELECT sku, name, category, price_inr, stock, warranty_months FROM products")
     scored = []
     for p in cur.fetchall():

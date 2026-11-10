@@ -306,3 +306,42 @@ def test_not_received_report_window_is_computed():
     assert facts["not_received_report_deadline"] == "2026-10-31 (Saturday), passed 10 days ago"
     order["delivered_at"] = now - timedelta(hours=10)
     assert _date_facts(order, now)["not_received_report_deadline"].endswith("still open")
+
+
+class _RowsCur:
+    def __init__(self, rows):
+        self.rows = rows
+
+    def execute(self, sql, params):
+        self.params = params
+
+    def fetchall(self):
+        return self.rows
+
+
+_GRINDERS = [{"category": "grinder", "name": "Larkfield Conical Burr Grinder Slim"}]
+
+
+@pytest.mark.parametrize("text, blocked", [
+    ("i have order a kettle but received the non pro version. its LC-1153", True),  # the live failure
+    ("I want to return the grinder from order LC-1153", False),
+    ("return the burr grinder and the kettle from LC-1153", False),  # any overlap passes
+    ("its LC-1153, i want a refund", False),  # nothing named: nothing to compare
+    ("my coffee order LC-1153 arrived, return it", False),  # "coffee" alone is too vague to block
+    ("the Ethiopia Yirgacheffe beans from LC-1153 taste off", True),
+])
+def test_records_mismatch(text, blocked):
+    from app.tools import records_mismatch
+
+    r = records_mismatch("LC-1153", text, _RowsCur(_GRINDERS))
+    assert (r is not None) is blocked
+    if blocked:
+        assert r["suggest"] == "ticket" and "LC-1153" in r["error"] and "Conical Burr Grinder Slim" in r["error"]
+
+
+def test_described_categories_reads_product_words():
+    from app.tools import described_categories
+
+    assert described_categories("moka pot leaking") == {"brewer": "moka pot"}
+    assert described_categories("Kettle and digital SCALE") == {"kettle": "kettle", "accessory": "scale"}
+    assert described_categories("please press cancel") == {}
