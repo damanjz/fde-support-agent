@@ -11,6 +11,7 @@ from psycopg.rows import dict_row
 from psycopg.types.json import Jsonb
 
 RETURN_WINDOW_DAYS = 30
+NOT_RECEIVED_REPORT_HOURS = 48  # KB-003: report 'marked delivered but not received' within 48 h of the scan
 PICKUP_FEE_INR = 99
 ORDER_ID_RE = re.compile(r"^LC-\d{4}$")
 WRITE_TOOLS = {"start_return", "create_ticket"}
@@ -167,11 +168,20 @@ def _date_facts(order: dict, now: datetime) -> dict:
         if delivered.tzinfo is None:
             delivered = delivered.replace(tzinfo=UTC)
         open_ = now - delivered <= timedelta(days=RETURN_WINDOW_DAYS)
+        nr_deadline = delivered + timedelta(hours=NOT_RECEIVED_REPORT_HOURS)
+        nr_open = now <= nr_deadline
+        nr_days = (_ist_date(now) - _ist_date(nr_deadline)).days
+        # spelled out in words: a bare boolean was ignored by the model in a live test (2026-11-10)
+        nr_text = f"{day(_ist_date(nr_deadline))}, " + (
+            "still open" if nr_open else (f"passed {nr_days} days ago" if nr_days > 0 else "passed")
+        )
         facts.update(
             days_since_delivery=(_ist_date(now) - _ist_date(delivered)).days,
             return_window_ends=day(_ist_date(delivered + timedelta(days=RETURN_WINDOW_DAYS))),
             return_window_open=open_,
             hours_since_delivery=int((now - delivered).total_seconds() // 3600),
+            not_received_report_window_open=nr_open,
+            not_received_report_deadline=nr_text,
         )
     elif order["status"] != "delivered" and shipped:
         start = _ist_date(shipped)

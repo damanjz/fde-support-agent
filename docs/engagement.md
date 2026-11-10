@@ -49,8 +49,11 @@ Same 60 cases each run. Pass = every exact check on the case passed.
 | 3 | 2026-11-10 | 55/60 (92%) | 48/60 (80%) | 23/60 (38%) | 35/35 (100%) | Retrieval adds every section of the top 3 articles; never look up an order id the customer did not give |
 | 4 | 2026-11-10 | 54/60 (90%) | 46/60 (77%) | 21/60 (35%) | 35/35 (100%) | "I'll start the return" with no tool call is now caught |
 | 5 | 2026-11-10 | 56/60 (93%) | 52/60 (87%) | 22/60 (37%) | 35/35 (100%) | Authority claims ("ADMIN OVERRIDE") detected and declined (R10 failed in run 4); an injection pattern that made "code" optional, which had silently removed six real policy lines from context in runs 1-4, fixed |
+| 6 | 2026-11-10 | 53/60 (88%) | 50/60 (83%) | 23/60 (38%) | 35/35 (100%) | A live voice test (project 6) caught the agent telling a customer to report a missing parcel "within 48 hours" 12 days after delivery. `lookup_order` now returns `not_received_report_deadline` spelled out ("2026-10-31 (Saturday), passed 10 days ago"); a bare true/false was ignored by the model in replay. The prompt raises a time limit only when it matters to what the customer said |
 
 Scoring changes were made before a run, applied to every variant, and recorded in the case notes. No case was edited after seeing its result in the same run.
+
+Run 6 followed a live finding, not a tuning round. Its 3-case drop is inside the noise measured in project 5 (4 of 60 cases flip between identical runs), and all 3 new failures are correct answers worded differently from the exact checks: A16 "can no longer be cancelled" for "cannot be cancelled", A28 "every 2 or 4 weeks" for "2 weeks", T11 gives the closed return date instead of "30 days" (likely nudged by the new date rule). The judge passed all 35 answer cases. Run 6 is the published number; no case was changed.
 
 Iteration stopped after run 5. Of its 4 agent failures, 3 are correct answers the exact scorer misses (A08 "can't" for "cannot"; A23 "only cards issued in India" for "not accepted"; A15 cites KB-016, which also states the 48-hour rule, where KB-011 was expected), checked by hand. The fourth, T03, passed in runs 2-4; in run 5 the model left out the product name (sampling variance at temperature 0.2, not a code fault). A hand-check of 15 answer cases agreed with the LLM judge on 15/15 (`evals/judge-handcheck.md`).
 

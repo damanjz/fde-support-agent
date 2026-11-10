@@ -287,3 +287,22 @@ def test_search_products_keywords_stems_category_and_budget():
     assert [p["sku"] for p in cheap] == ["KT-001"]
     assert "error" in search_products({"query": "laptop"}, cur)
     assert "error" in search_products({"category": "phones"}, cur)
+
+
+def test_not_received_report_window_is_computed():
+    # KB-003: a parcel marked delivered but not received must be reported within 48 h of the scan
+    from datetime import UTC, datetime, timedelta
+
+    from app.tools import _date_facts
+
+    now = datetime(2026, 11, 10, 12, 0, tzinfo=UTC)
+    order = {"status": "delivered", "delivered_at": now - timedelta(hours=47), "shipped_at": None}
+    assert _date_facts(order, now)["not_received_report_window_open"] is True
+    order["delivered_at"] = now - timedelta(hours=49)
+    assert _date_facts(order, now)["not_received_report_window_open"] is False
+    order["delivered_at"] = now - timedelta(days=12)  # the live-mic case: LC-1150, 12 days after delivery
+    facts = _date_facts(order, now)
+    assert facts["not_received_report_window_open"] is False
+    assert facts["not_received_report_deadline"] == "2026-10-31 (Saturday), passed 10 days ago"
+    order["delivered_at"] = now - timedelta(hours=10)
+    assert _date_facts(order, now)["not_received_report_deadline"].endswith("still open")
